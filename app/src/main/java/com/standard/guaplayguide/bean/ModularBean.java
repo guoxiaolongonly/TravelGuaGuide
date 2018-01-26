@@ -16,6 +16,7 @@ public class ModularBean {
     public int id;//模块id
     public String imageUrl;//
     public boolean isWebView;//是否是web页
-    public String webUrl;
+    public String webUrl;//web页地址
+    public boolean haveChildrenModular;//是否有子模块
     public List<ModularBean> childrenModular;//子模块列表
 }

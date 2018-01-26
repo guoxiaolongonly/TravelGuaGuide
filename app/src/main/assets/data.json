@@ -1,0 +1,11 @@
+{
+	"modularName":"test",
+	"dataType":1,
+	"data":"sb",
+	"id":1,
+	"imageUrl":"xxx.png",
+	"isWebView":true,
+	"webUrl":"www.baidu.com",
+	"haveChildrenModular":false,
+	"childrenModular":[]
+}

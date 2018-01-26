@@ -18,6 +18,6 @@ public interface ApiService {
 
     @FormUrlEncoded
     @POST("getApp")
-    Observable<ModularBean> refreshData(@Field("uuid") String uuid);
+    Observable<ModularBean> loadData();
 
 }

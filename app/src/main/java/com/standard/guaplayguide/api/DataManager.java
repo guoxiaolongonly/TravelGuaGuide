@@ -14,9 +14,11 @@ import rx.Observable;
  */
 public class DataManager extends ResponseHandle {
 
-    //获取appId
-    public static Observable<ModularBean> refreshData(String uuid) {
-        return Dao.getApiService().refreshData(uuid).compose(applySchedulersWithToken());
+    /**
+     * 加载数据
+     */
+    public static Observable<ModularBean> loadData() {
+        return Dao.getApiService().loadData().compose(applySchedulersWithToken());
     }
 
 }
