@@ -1,0 +1,195 @@
+apply plugin: 'com.android.application'
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "com.standard.guaplayguide"
+        minSdkVersion 21
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+
+        buildConfigField("String", "DEVICE_ID", DEVICE_ID)
+        buildConfigField("int", "CONNECT_TIMEOUT", CONNECT_TIMEOUT)
+        buildConfigField("int", "WRITE_TIMEOUT", WRITE_TIMEOUT)
+        buildConfigField("int", "READ_TIMEOUT", READ_TIMEOUT)
+        buildConfigField("String", "DEVICE_TYPE", DEVICE_TYPE)
+        buildConfigField("String", "INTER_VERSION", INTER_VERSION)
+        buildConfigField("int", "TIME_CLICK_IGNORE", TIME_CLICK_IGNORE)
+        buildConfigField("String", "RECEIVABLES_BUNDLE", RECEIVABLES_BUNDLE)
+        buildConfigField("String", "HOST_URL", HOST_URL)
+        //sp常量
+        buildConfigField("String", "KEY_FIRST_INSTALL", KEY_FIRST_INSTALL)
+        buildConfigField("String", "KEY_APP_INFO", KEY_APP_INFO)
+        buildConfigField("String", "KEY_LOGIN_INFO", KEY_LOGIN_INFO)
+        buildConfigField("String", "KEY_USER_RECORD", KEY_USER_RECORD)
+
+        ndk {
+            //设置支持的SO库架构
+            abiFilters 'armeabi', 'x86', 'armeabi-v7a'
+        }
+
+        //dex突破65535的限制
+        multiDexEnabled true
+        signingConfigs {
+            debug {
+//                storeFile file(KEYSTORE)
+//                storePassword STORE_PASSWORD
+//                keyAlias KEYALIAS
+//                keyPassword KEY_PASSWORD
+            }
+            release {
+//                storeFile file(KEYSTORE)
+//                storePassword STORE_PASSWORD
+//                keyAlias KEYALIAS
+//                keyPassword KEY_PASSWORD
+            }
+        }
+        buildTypes {
+            debug {
+                buildConfigField("String", "HOST_URL", HOST_URL)
+                //显示log
+                buildConfigField("boolean", "DEBUG_LOG", "true")
+                buildConfigField("boolean", "NETWORK_LOG", "true")
+                versionNameSuffix "-debug"
+                //是否使用代码混淆
+                minifyEnabled false
+                zipAlignEnabled false
+                //移除无用的resource文件
+                shrinkResources false
+                signingConfig signingConfigs.debug
+            }
+            release {
+                buildConfigField("String", "HOST_URL", HOST_URL)
+                // 不显示Log
+                buildConfigField("boolean", "DEBUG_LOG", "false")
+                buildConfigField("boolean", "NETWORK_LOG", "false")
+                debuggable false
+                //是否使用代码混淆
+                minifyEnabled false
+                zipAlignEnabled true
+                // 移除无用的resource文件
+                shrinkResources false
+                proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+                signingConfig signingConfigs.release
+            }
+            //修改生成的apk名字，格式为 app名_版本号_打包时间_渠道名_release.apk
+            applicationVariants.all { variant ->
+                variant.outputs.all { output ->
+                    if (variant.buildType.name.equals('release')) {
+                        outputFileName = getProductName() + "_v${defaultConfig.versionName}_${releaseTime()}_" + variant.productFlavors[0].name + '_release.apk'
+//                        output.name = new File(oldFile.parent, releaseApkName)
+                    } else if (variant.buildType.name.equals('debug')) {
+                        outputFileName = getProductName() + "_v${defaultConfig.versionName}_${releaseTime()}_" + variant.productFlavors[0].name + '_debug.apk'
+//                        output.name  = new File(oldFile.parent, debugApkName)
+                    }
+                }
+            }
+
+        }
+
+        lintOptions {
+            abortOnError false
+        }
+        packagingOptions {
+            exclude 'Change.Log'
+            exclude 'META-INF/LICENSE.txt'
+        }
+        flavorDimensions "company"
+        //自动多渠道打包
+        productFlavors {
+            xiaomi {
+                dimension "company"
+            }
+            baidu {
+                dimension "company"
+            }
+            yyb {
+                dimension "company"
+            }
+            pp {
+                dimension "company"
+            }
+            z360 {
+                dimension "company"
+            }
+            huawei {
+                dimension "company"
+            }
+        }
+        configurations.all {
+            resolutionStrategy.force 'com.google.code.findbugs:jsr305:1.3.9'
+        }
+    }
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+}
+// 读取版本号
+def getVersionCode() {
+    def versionFile = file('version.properties')
+    if (versionFile.canRead()) {
+        def Properties versionProps = new Properties()
+        versionProps.load(new FileInputStream(versionFile))
+        def versionCode = versionProps['VERSION_CODE'].toInteger()
+        def runTasks = gradle.startParameter.taskNames
+        if ('assembleRelease' in runTasks) {
+            versionProps['VERSION_CODE'] = (++versionCode).toString()
+            versionProps.store(versionFile.newWriter(), null)
+        }
+        return versionCode
+    } else {
+        throw new GradleException("Could not find version.properties!")
+    }
+}
+
+// 读取版本名
+def getVersionName() {
+    def versionFile = file('version.properties')
+    if (versionFile.canRead()) {
+        def Properties versionProps = new Properties()
+        versionProps.load(new FileInputStream(versionFile))
+        def versionName = versionProps['VERSION_NAME']
+        return versionName
+    } else {
+        throw new GradleException("Could not find version.properties!")
+    }
+}
+// 获取程序名称
+def getProductName() {
+    return "食安云厨"
+}
+// 获取当前系统时间
+def releaseTime() {
+    return new Date().format("yyyy-MM-dd", TimeZone.getTimeZone("UTC"))
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+
+    //自动布局
+    implementation 'com.zhy:autolayout:1.4.5'
+    //okhttp
+    compile 'com.squareup.okhttp3:logging-interceptor:3.4.1'
+    // Rx
+    implementation 'io.reactivex:rxjava:1.2.1'
+    implementation 'io.reactivex:rxandroid:1.1.0'
+    // Retrofit网络请求
+    implementation 'com.squareup.retrofit2:retrofit:2.1.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.1.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
+    //lifeManager
+    compile 'com.trello:rxlifecycle-components:1.0'
+    //EventBus
+    implementation 'org.greenrobot:eventbus:3.1.1'
+    //glide
+    implementation 'com.github.bumptech.glide:glide:4.5.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.5.0'
+    //log
+    compile 'com.orhanobut:logger:1.15'
+}
