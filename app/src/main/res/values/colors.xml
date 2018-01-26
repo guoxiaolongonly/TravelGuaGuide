@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimary">#3DB854</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="accent">#3c99e8</color>
+    <color name="textColorPrimary">#333333</color>
+    <color name="windowBackground">#f8f8f8</color>
 
-    <color name="windowBackground">#f8fafc</color>
+    <!--主色调-->
+    <color name="main_green_color">#3DB854</color>
+    <color name="main_gray_color">#838383</color>
+
 </resources>

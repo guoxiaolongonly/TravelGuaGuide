@@ -4,6 +4,7 @@ import com.standard.guaplayguide.bean.ModularBean;
 
 import retrofit2.http.Field;
 import retrofit2.http.FormUrlEncoded;
+import retrofit2.http.GET;
 import retrofit2.http.POST;
 import rx.Observable;
 
@@ -16,8 +17,7 @@ import rx.Observable;
  */
 public interface ApiService {
 
-    @FormUrlEncoded
-    @POST("getApp")
+    @GET("master/app/src/main/assets/data.json")
     Observable<ModularBean> loadData();
 
 }

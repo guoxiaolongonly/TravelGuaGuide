@@ -1,18 +1,28 @@
 package com.standard.guaplayguide;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.standard.guaplayguide.api.DataManager;
+import com.standard.guaplayguide.base.BaseFuncActivity;
+import com.standard.guaplayguide.utils.LogUtil;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseFuncActivity {
+
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        DataManager.loadData().subscribe(modularBean -> {
+    protected int getLayoutId() {
+        return R.layout.activity_main;
+    }
 
+    @Override
+    protected void init() {
+        DataManager.loadData().subscribe(modularBean -> {
+            LogUtil.d(modularBean.data);
         });
+    }
+
+    @Override
+    protected void setListener() {
+
     }
 }

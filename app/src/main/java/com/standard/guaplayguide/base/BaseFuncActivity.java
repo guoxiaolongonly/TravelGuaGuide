@@ -11,7 +11,6 @@ import com.standard.guaplayguide.utils.ToastUtil;
 import com.standard.guaplayguide.utils.Util;
 
 import org.greenrobot.eventbus.EventBus;
-import org.greenrobot.eventbus.Subscribe;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -33,7 +32,6 @@ public abstract class BaseFuncActivity<T extends BasePresenter> extends BaseActi
     protected void onCreate(Bundle savedInstanceState) {
         mPresenter = getPresenter();
         super.onCreate(savedInstanceState);
-        EventBus.getDefault().register(this);
         getBaseContentView().setOnClickListener(v -> hideAllKeyBoard());
         getEditTextView((ViewGroup) getBaseContentView());
     }
@@ -51,6 +49,7 @@ public abstract class BaseFuncActivity<T extends BasePresenter> extends BaseActi
         }
     }
 
+
     public T getPresenter() {
         return null;
     }
@@ -58,12 +57,12 @@ public abstract class BaseFuncActivity<T extends BasePresenter> extends BaseActi
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        EventBus.getDefault().unregister(this);
         if (mPresenter != null) {
             mPresenter.detachView();
         }
     }
 
+    @Override
     public void showError(ErrorThrowable errorThrowable) {
         closeLoadingDialog();
         ToastUtil.showToast(errorThrowable.msg);

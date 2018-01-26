@@ -28,7 +28,8 @@ import retrofit2.converter.gson.GsonConverterFactory;
  * http://www.jcodecraeer.com/a/anzhuokaifa/androidkaifa/2016/0131/3930.html
  * <p>
  * 网络层处理类，主要是创建Retrofit对象，并添加Okhttp拦截等...
- *retrofretrof
+ *
+ * @author CRAWLER
  * @data: 2016/2/17 11:06
  * @version: V1.0
  */
@@ -66,7 +67,7 @@ public class RetrofitDao {
                     .writeTimeout(BuildConfig.WRITE_TIMEOUT, TimeUnit.SECONDS)
                     .readTimeout(BuildConfig.READ_TIMEOUT, TimeUnit.SECONDS)
                     .cookieJar(cookieJar)
-                    .addInterceptor(new HttpInterceptor(iBuildPublicParams))
+//                    .addInterceptor(new HttpInterceptor(iBuildPublicParams))
                     .addInterceptor(new HttpLoggingInterceptor().setLevel(HttpLoggingInterceptor.Level.BODY))
                     .build();
             Gson gson = new GsonBuilder().setDateFormat(DATE_FORMAT).create();
