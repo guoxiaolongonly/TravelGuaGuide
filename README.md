@@ -29,6 +29,7 @@
   - 小动物喜欢吃什么
   - 进阶攻略 提供一些骨灰级玩家需要的信息。（比如收割草，给小动物喂食什么合适等等..）
   - 更新数据
+
 2. 根据需求其实已经很明了了首页6个tab，
   - 入门和进阶
   - 小动物介绍
@@ -39,26 +40,28 @@
   - 另外配置一个侧拉的View用来展示作者介绍，和数据更新，2333，装逼用！！
 
 # Then coding
+
   主要是考虑动态配置问题，不同数据分配不同页面
-  1.首页一个列表用来展示所有模块
-  2.模块下面可能有子模块，根据类别启动子模块的Activity。
-  3.功能，不同功能展示的页面效果也不一样。gridView
+
+1.首页一个列表用来展示所有模块
+2.模块下面可能有子模块，根据类别启动子模块的Activity。
+3.功能，不同功能展示的页面效果也不一样。gridView
  
   - 小动物，中图，中文字描述，点击查看详情gridView
   - 商店道具，中图，中文字描述，点击查看详情gridView
   - 特产，小图，小文字描述，点击查看详情gridView
   - 称号，中图，中文字描述，点击查看详情gridView
-  - 收藏品，中图，中文字描述，点击查看详情gridView[^]
+  - 收藏品，中图，中文字描述，点击查看详情gridView
   - 入门和进阶，子模块，实现做图右文字列表做选择gridView
   - 详情页大图大文字listView 图片+文字每个段落
   - 预留一个webActivity做web加载。 预留一个TextActivity做文本加载
 
 
-  4.两种类型的模块选择页  ModularGridViewActivity,ModularListViewActivity.
-  5.三种详情查看页 BigPicDetailActivity,WebActivity,TextActivity
-  6.两种描述页 MiddleDecribeActivity,SmallDeScribeActivity
-  7.侧拉菜单
-  8.关于APP[^]
+4.两种类型的模块选择页  ModularGridViewActivity,ModularListViewActivity.
+5.三种详情查看页 BigPicDetailActivity,WebActivity,TextActivity
+6.两种描述页 MiddleDecribeActivity,SmallDeScribeActivity
+7.侧拉菜单
+8.关于APP
 
 # License
 
