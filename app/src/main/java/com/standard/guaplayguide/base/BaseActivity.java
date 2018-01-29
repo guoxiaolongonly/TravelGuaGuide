@@ -10,7 +10,7 @@ import android.widget.LinearLayout;
 import com.jakewharton.rxbinding.view.RxView;
 import com.standard.guaplayguide.BuildConfig;
 import com.standard.guaplayguide.R;
-import com.standard.guaplayguide.utils.StatusBarCompat;
+import com.standard.guaplayguide.utils.statusbar.StatusBarCompat;
 import com.standard.guaplayguide.utils.StatusBarValue;
 import com.standard.guaplayguide.widget.ProgressDialog;
 import com.trello.rxlifecycle.android.ActivityEvent;
@@ -55,7 +55,7 @@ public abstract class BaseActivity extends RxAutoLayoutActivity {
         rootView.setOrientation(LinearLayout.VERTICAL);
         rootView.setLayoutParams(params);
         rootView.addView(contentView, params);
-        StatusBarCompat.compat(this, rootView, getStatusBar());
+        StatusBarCompat.compat(this, getStatusBar());
         super.setContentView(rootView);
     }
 
@@ -95,7 +95,7 @@ public abstract class BaseActivity extends RxAutoLayoutActivity {
     }
 
     public StatusBarValue getStatusBar() {
-        return new StatusBarValue(true, R.color.colorPrimary);
+        return new StatusBarValue(true, getResources().getColor(R.color.colorPrimary));
     }
 
     public void getExtra() {

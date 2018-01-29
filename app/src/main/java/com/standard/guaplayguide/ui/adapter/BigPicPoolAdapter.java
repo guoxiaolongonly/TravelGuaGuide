@@ -74,8 +74,7 @@ public class BigPicPoolAdapter extends RecyclerView.Adapter<BigPicPoolAdapter.Vi
         }
 
         public void setData(ModularBean data, int position) {
-            tvModularName.setText(data);
-            Uiu
+            tvModularName.setText(data.modularName);
         }
     }
 }
