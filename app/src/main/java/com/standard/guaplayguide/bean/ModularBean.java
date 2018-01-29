@@ -1,5 +1,8 @@
 package com.standard.guaplayguide.bean;
 
+import com.google.gson.annotations.SerializedName;
+
+import java.io.Serializable;
 import java.util.List;
 
 /**
@@ -9,14 +12,22 @@ import java.util.List;
  * @date: 2018/1/26 09:00
  */
 
-public class ModularBean {
-    public String modularName;
-    public int dataType; //这边就用来做实体配置对应的实体类，方便做解析
-    public String data;//实体类数据
-    public int id;//模块id
-    public String imageUrl;//
-    public boolean isWebView;//是否是web页
+public class ModularBean implements Serializable{
+
+    @SerializedName("id")
+    public int id;//字段编号
+    @SerializedName("title")
+    public String title; //当前项名称
+    @SerializedName("describe")
+    public String describe; //当前项描述
+    @SerializedName("imageUrl")
+    public String imageUrl;//图片url
+    @SerializedName("webUrl")
     public String webUrl;//web页地址
-    public boolean haveChildrenModular;//是否有子模块
-    public List<ModularBean> childrenModular;//子模块列表
+    @SerializedName("dataType")
+    public int dataType; //这个字段用来确定子项界面的样式
+    @SerializedName("haveChildrenModular")
+    public boolean haveChildrenModular;//是否有子项
+    @SerializedName("childrenModular")
+    public List<ModularBean> childrenModular;//子项列表
 }

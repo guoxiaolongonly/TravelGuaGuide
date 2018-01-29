@@ -1,5 +1,6 @@
 package com.standard.guaplayguide.ui;
 
+import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
@@ -15,10 +16,15 @@ import com.standard.guaplayguide.ui.view.IMainView;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity extends BaseTitleBarActivity<MainPresenter> implements IMainView {
+public class CommonActivity extends BaseTitleBarActivity<MainPresenter> implements IMainView {
     private RecyclerView rvContent;
     private LargerGridViewAdapter mModularGridViewAdapter;
     private SwipeMenuLayout smlMain;
+
+    public static Bundle buildBundle(ModularBean modularBean)
+    {
+        return null;
+    }
 
     @Override
     public MainPresenter getPresenter() {

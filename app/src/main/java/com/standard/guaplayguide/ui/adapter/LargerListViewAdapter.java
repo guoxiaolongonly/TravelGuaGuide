@@ -11,21 +11,22 @@ import android.widget.TextView;
 import com.standard.guaplayguide.R;
 import com.standard.guaplayguide.bean.ModularBean;
 import com.standard.guaplayguide.utils.LogUtil;
+import com.standard.guaplayguide.utils.UiUtil;
 
 import java.util.List;
 
 /**
- * 大图模块<文字+描述>
+ * 父模块适配器<文字+描述>
  * Created by 小龙 on 2018/1/27.
  */
 
-public class BigPicPoolAdapter extends RecyclerView.Adapter<BigPicPoolAdapter.ViewHolder> {
+public class LargerListViewAdapter extends RecyclerView.Adapter<LargerListViewAdapter.ViewHolder> {
     private final String TAG = getClass().getName();
     private List<ModularBean> mModularBeanList;
     private Context mContext;
     private View.OnClickListener mOnModularClickListener;
 
-    public BigPicPoolAdapter(Context context, List<ModularBean> modularBeanList) {
+    public LargerListViewAdapter(Context context, List<ModularBean> modularBeanList) {
         mContext = context;
         mModularBeanList = modularBeanList;
     }
@@ -50,7 +51,7 @@ public class BigPicPoolAdapter extends RecyclerView.Adapter<BigPicPoolAdapter.Vi
 
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        return new ViewHolder(LayoutInflater.from(mContext).inflate(R.layout.listitem_big_picture, parent, false));
+        return new ViewHolder(LayoutInflater.from(mContext).inflate(R.layout.item_larger_list, parent, false));
     }
 
     @Override
@@ -74,7 +75,8 @@ public class BigPicPoolAdapter extends RecyclerView.Adapter<BigPicPoolAdapter.Vi
         }
 
         public void setData(ModularBean data, int position) {
-            tvModularName.setText(data.modularName);
+            tvModularName.setText(data.title);
+            UiUtil.setCircleImage(ivModularImage, data.imageUrl, ivModularImage.getWidth(), R.drawable.ic_loading, R.drawable.ic_loading);
         }
     }
 }

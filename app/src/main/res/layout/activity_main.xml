@@ -1,9 +1,210 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/rvContent"
+<com.mcxtzhang.swipemenulib.SwipeMenuLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/smlMain"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="40px">
+    app:leftSwipe="true">
 
-</android.support.v7.widget.RecyclerView>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="40px" />
+
+    <LinearLayout
+        android:id="@+id/llDrawLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="798px">
+
+            <ImageView
+                android:id="@+id/ivBackGround"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY" />
+
+            <FrameLayout
+                android:id="@+id/flHeader"
+                android:layout_width="420px"
+                android:layout_height="420px"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="100px">
+
+                <ImageView
+                    android:id="@+id/ivHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="25px" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tvUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/flHeader"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="80px"
+                android:text="wow"
+                android:textSize="72px" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rlCollect"
+                android:layout_width="match_parent"
+                android:layout_height="160px"
+                android:layout_marginLeft="50px"
+                android:layout_marginRight="50px"
+                android:background="?android:selectableItemBackground">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="我的收藏"
+                    android:textSize="48px" />
+
+
+                <ImageView
+                    android:layout_width="22px"
+                    android:layout_height="42px"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/ic_arrow_right" />
+
+                <View
+                    style="@style/divider_horizontal"
+                    android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlHelper"
+                android:layout_width="match_parent"
+                android:layout_height="160px"
+                android:layout_marginLeft="50px"
+                android:layout_marginRight="50px"
+                android:background="?android:selectableItemBackground">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="帮助与提示"
+                    android:textSize="48px" />
+
+                <ImageView
+                    android:layout_width="22px"
+                    android:layout_height="42px"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/ic_arrow_right" />
+
+                <View
+                    style="@style/divider_horizontal"
+                    android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rlAbout"
+                android:layout_width="match_parent"
+                android:layout_height="160px"
+                android:layout_marginLeft="50px"
+                android:layout_marginRight="50px"
+                android:background="?android:selectableItemBackground">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="关于产品"
+                    android:textSize="48px" />
+
+
+                <ImageView
+                    android:layout_width="22px"
+                    android:layout_height="42px"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/ic_arrow_right" />
+
+                <View
+                    style="@style/divider_horizontal"
+                    android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rlOpinion"
+                android:layout_width="match_parent"
+                android:layout_height="160px"
+                android:layout_marginLeft="50px"
+                android:layout_marginRight="50px"
+                android:background="?android:selectableItemBackground">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="意见反馈"
+                    android:textSize="48px" />
+
+
+                <ImageView
+                    android:layout_width="22px"
+                    android:layout_height="42px"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/ic_arrow_right" />
+
+                <View
+                    style="@style/divider_horizontal"
+                    android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rlSetting"
+                android:layout_width="match_parent"
+                android:layout_height="160px"
+                android:layout_marginLeft="50px"
+                android:layout_marginRight="50px"
+                android:background="?android:selectableItemBackground">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="设置"
+                    android:textSize="48px" />
+
+
+                <ImageView
+                    android:layout_width="22px"
+                    android:layout_height="42px"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/ic_arrow_right" />
+
+                <View
+                    style="@style/divider_horizontal"
+                    android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</com.mcxtzhang.swipemenulib.SwipeMenuLayout>

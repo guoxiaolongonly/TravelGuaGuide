@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="160px"
+    android:layout_marginLeft="50px"
+    android:layout_marginRight="50px"
+    android:background="?android:selectableItemBackground">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="我的收藏"
+        android:textSize="48px" />
+
+
+    <ImageView
+        android:layout_width="22px"
+        android:layout_height="42px"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/ic_arrow_right" />
+
+    <View
+        style="@style/divider_horizontal"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

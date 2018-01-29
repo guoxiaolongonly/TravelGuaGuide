@@ -11,8 +11,8 @@ buildscript {
         classpath 'com.android.tools.build:gradle:3.0.1'
         //gradle支持java8的lambda特性
         classpath 'me.tatarka:gradle-retrolambda:3.2.3'
-        // NOTE: Do not place your application dependencies here; they belong
-        // in the individual module build.gradle files
+        classpath "com.jfrog.bintray.gradle:gradle-bintray-plugin:1.1"
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:1.5'
     }
 }
 
@@ -21,6 +21,7 @@ allprojects {
         google()
         jcenter()
         mavenCentral()
+        maven { url "https://jitpack.io" }
     }
 }
 

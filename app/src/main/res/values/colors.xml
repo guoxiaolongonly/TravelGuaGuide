@@ -10,5 +10,15 @@
     <!--主色调-->
     <color name="main_green_color">#3DB854</color>
     <color name="main_gray_color">#838383</color>
-
+    <!--切线-->
+    <color name="main_divider_color">#DDDDDD</color>
+    <!-- 重要级文字信息标题-->
+    <color name="main_black_color">#333333</color>
+    <!-- 普通级导航名称和提示-->
+    <color name="main_normal_black_color">#666666</color>
+    <!-- 背景底色-->
+    <color name="main_content_color">#F9F9F9</color>
+    <!-- 辅助信息-->
+    <color name="transparent">#00000000</color>
+    <color name="white">#ffffff</color>
 </resources>
