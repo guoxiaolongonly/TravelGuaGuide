@@ -19,9 +19,7 @@ android {
         buildConfigField("String", "HOST_URL", HOST_URL)
         //sp常量
         buildConfigField("String", "KEY_FIRST_INSTALL", KEY_FIRST_INSTALL)
-        buildConfigField("String", "KEY_APP_INFO", KEY_APP_INFO)
-        buildConfigField("String", "KEY_LOGIN_INFO", KEY_LOGIN_INFO)
-        buildConfigField("String", "KEY_USER_RECORD", KEY_USER_RECORD)
+        buildConfigField("String", "KEY_DATA_RECORD", KEY_DATA_RECORD)
 
         ndk {
             //设置支持的SO库架构

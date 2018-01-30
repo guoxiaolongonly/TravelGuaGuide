@@ -12,22 +12,30 @@ import java.util.List;
  * @date: 2018/1/26 09:00
  */
 
-public class ModularBean implements Serializable{
+public class ModularBean implements Serializable {
 
+    //字段编号
     @SerializedName("id")
-    public int id;//字段编号
+    public int id;
+    //更新日期
+    @SerializedName("updateDate")
+    public String updateDate;
+    //当前项名称
     @SerializedName("title")
-    public String title; //当前项名称
+    public String title;
+    //当前项描述
     @SerializedName("describe")
-    public String describe; //当前项描述
+    public String describe;
+    //图片url
     @SerializedName("imageUrl")
-    public String imageUrl;//图片url
+    public String imageUrl;
+    //web页地址
     @SerializedName("webUrl")
-    public String webUrl;//web页地址
+    public String webUrl;
+    //这个字段用来确定子项界面的样式
     @SerializedName("dataType")
-    public int dataType; //这个字段用来确定子项界面的样式
-    @SerializedName("haveChildrenModular")
-    public boolean haveChildrenModular;//是否有子项
+    public int dataType;
+    //子项列表
     @SerializedName("childrenModular")
-    public List<ModularBean> childrenModular;//子项列表
+    public List<ModularBean> childrenModular;
 }

@@ -1,11 +1,156 @@
 {
-	"modularName":"test",
-	"dataType":1,
-	"data":"sb",
-	"id":1,
-	"imageUrl":"xxx.png",
-	"isWebView":true,
-	"webUrl":"www.baidu.com",
-	"haveChildrenModular":false,
-	"childrenModular":[]
+  "id": 1,
+  "updateDate": "2018-1-30",
+  "title": "旅行青蛙攻略",
+  "describe": "表格大图101，表格中图102，表格小图103，列表大图201，列表纯文本202，网页301，纯文本页302",
+  "imageUrl": "xxx.png",
+  "webUrl": "www.baidu.com",
+  "dataType": 101,
+  "childrenModular": [
+    {
+      "title": "入门和进阶",
+      "imageUrl": "xxx.png",
+      "dataType": 202,
+      "childrenModular": [
+        {
+          "title": "基本玩法",
+          "dataType": 201,
+          "childrenModular": [
+            {
+              "describe": "基本玩法段落1",
+              "imageUrl": "xxx.png"
+            },
+            {
+              "describe": "基本玩法段落2",
+              "imageUrl": "xxx.png"
+            }
+          ]
+        },
+        {
+          "title": "进阶玩法",
+          "dataType": 201,
+          "childrenModular": [
+            {
+              "describe": "进阶玩法段落1",
+              "imageUrl": "xxx.png"
+            },
+            {
+              "describe": "进阶玩法段落2",
+              "imageUrl": "xxx.png"
+            }
+          ]
+        },
+        {
+          "title": "骨灰玩法",
+          "dataType": 201,
+          "childrenModular": [
+            {
+              "describe": "骨灰玩法段落1",
+              "imageUrl": "xxx.png"
+            },
+            {
+              "describe": "骨灰玩法段落2",
+              "imageUrl": "xxx.png"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "小动物介绍",
+      "imageUrl": "xxx.png",
+      "dataType": 102,
+      "childrenModular": [
+        {
+          "title": "螃蟹",
+          "imageUrl": "xxx.png",
+          "dataType": 0,
+          "describe": "这是一个恐怖的螃蟹！！"
+        },
+        {
+          "title": "蜗牛",
+          "imageUrl": "xxx.png",
+          "dataType": 0,
+          "describe": "这是一只恐怖的蜗牛！！"
+        }
+      ]
+    },
+    {
+      "title": "称号介绍",
+      "imageUrl": "xxx.png",
+      "dataType": 102,
+      "childrenModular": [
+        {
+          "title": "称号1",
+          "imageUrl": "xxx.png",
+          "dataType": 0,
+          "describe": "这是一个恐怖的螃蟹！！"
+        },
+        {
+          "title": "称号2",
+          "imageUrl": "xxx.png",
+          "dataType": 0,
+          "describe": "这是一只恐怖的蜗牛！！"
+        }
+      ]
+    },
+    {
+      "title": "商店道具介绍",
+      "imageUrl": "xxx.png",
+      "dataType": 102,
+      "childrenModular": [
+        {
+          "title": "道具1",
+          "imageUrl": "xxx.png",
+          "dataType": 0,
+          "describe": "这是一个恐怖的螃蟹！！"
+        },
+        {
+          "title": "道具2",
+          "imageUrl": "xxx.png",
+          "dataType": 0,
+          "describe": "这是一只恐怖的蜗牛！！"
+        }
+      ]
+    },
+    {
+      "title": "特产介绍",
+      "imageUrl": "xxx.png",
+      "webUrl": "www.baidu.com",
+      "dataType": 103,
+      "childrenModular": [
+        {
+          "title": "特产1",
+          "imageUrl": "xxx.png",
+          "dataType": 0,
+          "describe": "这是一个恐怖的特产！！"
+        },
+        {
+          "title": "特产2",
+          "imageUrl": "xxx.png",
+          "dataType": 0,
+          "describe": "这是一个恐怖的特产！！"
+        }
+        ]
+    },
+    {
+      "title": "收藏品介绍",
+      "imageUrl": "xxx.png",
+      "dataType": 102,
+      "childrenModular": [
+        {
+          "title": "收藏品1",
+          "imageUrl": "xxx.png",
+          "dataType": 0,
+          "describe": "这是一个恐怖的螃蟹！！"
+        },
+        {
+          "title": "收藏品2",
+          "imageUrl": "xxx.png",
+          "dataType": 0,
+          "describe": "这是一只恐怖的蜗牛！！"
+        }
+      ]
+    }
+  ]
 }

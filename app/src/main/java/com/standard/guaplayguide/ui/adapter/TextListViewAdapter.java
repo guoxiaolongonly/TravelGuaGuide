@@ -51,7 +51,7 @@ public class TextListViewAdapter extends RecyclerView.Adapter<TextListViewAdapte
 
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        return new ViewHolder(LayoutInflater.from(mContext).inflate(R.layout.item_modular_list, parent, false));
+        return new ViewHolder(LayoutInflater.from(mContext).inflate(R.layout.item_text_list, parent, false));
     }
 
     @Override

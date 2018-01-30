@@ -21,8 +21,8 @@
 
             <ImageView
                 android:id="@+id/ivModularImage"
-                android:layout_width="380px"
-                android:layout_height="380px" />
+                android:layout_width="260px"
+                android:layout_height="260px" />
 
             <TextView
                 android:id="@+id/tvModularName"
@@ -30,6 +30,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:text="测试标题"
+                android:layout_marginTop="28px"
                 android:textColor="@color/textColorPrimary"
                 android:textSize="40px" />
         </LinearLayout>

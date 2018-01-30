@@ -51,7 +51,7 @@ public class SmallGridViewAdapter extends RecyclerView.Adapter<SmallGridViewAdap
 
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        return new ViewHolder(LayoutInflater.from(mContext).inflate(R.layout.item_small_pic, parent, false));
+        return new ViewHolder(LayoutInflater.from(mContext).inflate(R.layout.item_small_grid, parent, false));
     }
 
     @Override

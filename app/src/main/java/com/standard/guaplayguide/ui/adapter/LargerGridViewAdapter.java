@@ -25,10 +25,11 @@ public class LargerGridViewAdapter extends RecyclerView.Adapter<LargerGridViewAd
     private List<ModularBean> mModularBeanList;
     private Context mContext;
     private View.OnClickListener mOnModularClickListener;
-
-    public LargerGridViewAdapter(Context context, List<ModularBean> modularBeanList) {
+    private int resId;
+    public LargerGridViewAdapter(Context context, List<ModularBean> modularBeanList, int resId) {
         mContext = context;
         mModularBeanList = modularBeanList;
+        this.resId=resId;
     }
 
     /**
@@ -76,7 +77,12 @@ public class LargerGridViewAdapter extends RecyclerView.Adapter<LargerGridViewAd
 
         public void setData(ModularBean data, int position) {
             tvModularName.setText(data.title);
-            UiUtil.setCircleImage(ivModularImage, data.imageUrl, ivModularImage.getWidth(), R.drawable.ic_loading, R.drawable.ic_loading);
+            UiUtil.setRoundImage(ivModularImage, data.imageUrl,  R.drawable.ic_loading, R.mipmap.ic_load_error,16);
+            itemView.setOnClickListener(view -> {if(mOnModularClickListener!=null)
+            {
+                view.setTag(data);
+                mOnModularClickListener.onClick(view);
+            }});
         }
     }
 }

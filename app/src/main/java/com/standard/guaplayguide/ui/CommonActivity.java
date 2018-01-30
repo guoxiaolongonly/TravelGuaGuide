@@ -3,8 +3,8 @@ package com.standard.guaplayguide.ui;
 import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.widget.RelativeLayout;
 
-import com.mcxtzhang.swipemenulib.SwipeMenuLayout;
 import com.standard.guaplayguide.R;
 import com.standard.guaplayguide.base.BaseTitleBar;
 import com.standard.guaplayguide.base.BaseTitleBarActivity;
@@ -17,9 +17,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CommonActivity extends BaseTitleBarActivity<MainPresenter> implements IMainView {
-    private RecyclerView rvContent;
+    private RelativeLayout rlContent;
     private LargerGridViewAdapter mModularGridViewAdapter;
-    private SwipeMenuLayout smlMain;
 
     public static Bundle buildBundle(ModularBean modularBean)
     {
@@ -38,12 +37,10 @@ public class CommonActivity extends BaseTitleBarActivity<MainPresenter> implemen
 
     @Override
     protected void init() {
-        rvContent = findView(R.id.rvContent);
-        smlMain = findView(R.id.smlMain);
-        smlMain.setIos(true);
-        rvContent.setLayoutManager(new GridLayoutManager(this, 2));
-        mModularGridViewAdapter = new LargerGridViewAdapter(this, new ArrayList<>());
-        rvContent.setAdapter(mModularGridViewAdapter);
+        rlContent = findView(R.id.rlContent);
+//        rlContent.setLayoutManager(new GridLayoutManager(this, 2));
+//        mModularGridViewAdapter = new LargerGridViewAdapter(this, new ArrayList<>(), R.layout.item_larger_grid);
+//        rvContent.setAdapter(mModularGridViewAdapter);
         mPresenter.getData();
     }
 

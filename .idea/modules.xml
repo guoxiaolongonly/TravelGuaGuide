@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/GuaPlayGuide.iml" filepath="$PROJECT_DIR$/GuaPlayGuide.iml" />
-      <module fileurl="file://D:\workspace\GuaPlayGuide\TravelGuaGuide.iml" filepath="D:\workspace\GuaPlayGuide\TravelGuaGuide.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
