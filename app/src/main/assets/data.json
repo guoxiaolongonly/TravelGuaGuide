@@ -91,6 +91,12 @@
           "imageUrl": "xxx.png",
           "dataType": 0,
           "describe": "这是一只恐怖的蜗牛！！"
+        },
+        {
+          "title": "称号3",
+          "imageUrl": "xxx.png",
+          "dataType": 0,
+          "describe": "这是一只恐怖的蜗牛！！"
         }
       ]
     },
@@ -121,6 +127,18 @@
       "childrenModular": [
         {
           "title": "特产1",
+          "imageUrl": "xxx.png",
+          "dataType": 0,
+          "describe": "这是一个恐怖的特产！！"
+        },
+        {
+          "title": "特产2",
+          "imageUrl": "xxx.png",
+          "dataType": 0,
+          "describe": "这是一个恐怖的特产！！"
+        },
+        {
+          "title": "特产2",
           "imageUrl": "xxx.png",
           "dataType": 0,
           "describe": "这是一个恐怖的特产！！"

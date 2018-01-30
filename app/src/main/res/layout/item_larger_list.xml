@@ -14,6 +14,7 @@
         android:visibility="gone" />
 
     <TextView
+        android:id="@+id/tvModularName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="这是描述这是描述"

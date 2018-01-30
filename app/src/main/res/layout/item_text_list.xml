@@ -2,14 +2,16 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="160px"
-    android:layout_marginLeft="50px"
-    android:layout_marginRight="50px"
+    android:paddingLeft="40px"
+    android:paddingRight="40px"
     android:background="?android:selectableItemBackground">
 
     <TextView
+        android:id="@+id/tvModularName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
+        android:textColor="@color/textColorPrimary"
         android:text="我的收藏"
         android:textSize="48px" />
 

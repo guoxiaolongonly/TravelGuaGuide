@@ -6,8 +6,8 @@
     android:layout_height="wrap_content">
 
     <android.support.v7.widget.CardView
-        android:layout_width="330px"
-        android:layout_height="330px"
+        android:layout_width="250px"
+        android:layout_height="250px"
         app:cardCornerRadius="22px"
         app:cardElevation="8px"
         app:cardUseCompatPadding="true"
@@ -21,17 +21,18 @@
 
             <ImageView
                 android:id="@+id/ivModularImage"
-                android:layout_width="260px"
-                android:layout_height="260px" />
+                android:layout_width="140px"
+                android:layout_height="140px" />
 
             <TextView
                 android:id="@+id/tvModularName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="12px"
                 android:layout_gravity="center_horizontal"
                 android:text="测试标题"
                 android:textColor="@color/textColorPrimary"
-                android:textSize="26px" />
+                android:textSize="24px" />
         </LinearLayout>
     </android.support.v7.widget.CardView>
 

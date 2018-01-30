@@ -21,8 +21,8 @@
 
             <ImageView
                 android:id="@+id/ivModularImage"
-                android:layout_width="260px"
-                android:layout_height="260px" />
+                android:layout_width="188px"
+                android:layout_height="188px" />
 
             <TextView
                 android:id="@+id/tvModularName"
@@ -30,8 +30,9 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:text="测试标题"
+                android:layout_marginTop="20px"
                 android:textColor="@color/textColorPrimary"
-                android:textSize="26px" />
+                android:textSize="30px" />
         </LinearLayout>
     </android.support.v7.widget.CardView>
 

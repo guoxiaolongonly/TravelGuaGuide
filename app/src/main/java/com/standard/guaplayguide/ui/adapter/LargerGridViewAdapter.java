@@ -26,6 +26,7 @@ public class LargerGridViewAdapter extends RecyclerView.Adapter<LargerGridViewAd
     private Context mContext;
     private View.OnClickListener mOnModularClickListener;
     private int resId;
+    private View.OnLongClickListener mOnLongClickListener;
     public LargerGridViewAdapter(Context context, List<ModularBean> modularBeanList, int resId) {
         mContext = context;
         mModularBeanList = modularBeanList;
@@ -50,9 +51,13 @@ public class LargerGridViewAdapter extends RecyclerView.Adapter<LargerGridViewAd
         this.mOnModularClickListener = onModularClickListener;
     }
 
+    public void setOnLongClickListener(View.OnLongClickListener onLongClickListener) {
+        this.mOnLongClickListener = onLongClickListener;
+    }
+
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        return new ViewHolder(LayoutInflater.from(mContext).inflate(R.layout.item_larger_grid, parent, false));
+        return new ViewHolder(LayoutInflater.from(mContext).inflate(resId, parent, false));
     }
 
     @Override
@@ -77,12 +82,16 @@ public class LargerGridViewAdapter extends RecyclerView.Adapter<LargerGridViewAd
 
         public void setData(ModularBean data, int position) {
             tvModularName.setText(data.title);
-            UiUtil.setRoundImage(ivModularImage, data.imageUrl,  R.drawable.ic_loading, R.mipmap.ic_load_error,16);
             itemView.setOnClickListener(view -> {if(mOnModularClickListener!=null)
             {
                 view.setTag(data);
                 mOnModularClickListener.onClick(view);
             }});
+
+            if(ivModularImage!=null)
+            {
+                UiUtil.setRoundImage(ivModularImage, data.imageUrl,  R.drawable.ic_loading, R.mipmap.ic_load_error,16);
+            }
         }
     }
 }
