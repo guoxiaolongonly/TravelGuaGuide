@@ -109,7 +109,6 @@ public class CommonActivity extends BaseTitleBarActivity {
 
     private void showPopupWindow(ModularBean childrenModuler) {
 
-
     }
 
 
