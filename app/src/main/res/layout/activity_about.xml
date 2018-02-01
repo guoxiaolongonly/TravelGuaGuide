@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/ivIcon"
+        android:layout_width="360px"
+        android:layout_height="360px"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="66px" />
+
+    <TextView
+        android:id="@+id/tvAuthor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40px"
+        android:layout_marginTop="36px"
+        android:text="App作者：Xiaolong"
+        android:autoLink="web"
+        android:textColor="@color/textColorPrimary" />
+
+    <View
+        style="@style/divider_horizontal"
+        android:layout_marginBottom="16px"
+        android:layout_marginTop="16px" />
+
+    <TextView
+        android:id="@+id/tvProject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40px"
+        android:autoLink="web"
+        android:text="项目地址：https://github.com/guoxiaolongonly/TravelGuaGuide"
+        android:textColor="@color/textColorPrimary" />
+
+    <View
+        style="@style/divider_horizontal"
+        android:layout_marginBottom="16px"
+        android:layout_marginTop="16px" />
+
+    <TextView
+        android:id="@+id/tvDataFrom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40px"
+        android:autoLink="web"
+        android:text="数据来源：https://www.zhihu.com/question/68733553/answer/294238268"
+        android:textColor="@color/textColorPrimary" />
+    <View
+        android:layout_marginTop="16px"
+        android:layout_marginBottom="16px"
+        style="@style/divider_horizontal"/>
+    <TextView
+        android:id="@+id/tvIssue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textColorPrimary"
+        android:layout_marginLeft="40px"
+        android:autoLink="web"
+        android:text="提问解答：https://github.com/guoxiaolongonly/TravelGuaGuide/issues/1"
+        />
+</LinearLayout>

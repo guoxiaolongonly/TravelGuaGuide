@@ -68,8 +68,4 @@ public class WebActivity<T extends BasePresenter> extends BaseTitleBarActivity<T
         });
     }
 
-    @Override
-    public StatusBarValue getStatusBar() {
-        return new StatusBarValue(false, R.color.transparent);
-    }
 }

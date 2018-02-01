@@ -4,6 +4,7 @@ import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.PopupWindow;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
@@ -21,6 +22,7 @@ public class MainActivity extends BaseTitleBarActivity<MainPresenter> implements
     private RelativeLayout rlContent;
     private LargerGridViewAdapter mModularGridViewAdapter;
     private TextView tvTitle;
+    private MainMenuPop mainMenuPop;
 
     @Override
     public MainPresenter getPresenter() {
@@ -36,11 +38,14 @@ public class MainActivity extends BaseTitleBarActivity<MainPresenter> implements
     protected void init() {
         rlContent = findView(R.id.rlContent);
         mPresenter.getData();
+        mainMenuPop = new MainMenuPop();
     }
 
     @Override
     protected void setListener() {
-
+        mainMenuPop.setOnRefresHClcikListener(view -> {
+            mPresenter.loadDataFromNet();
+        });
     }
 
 
@@ -79,9 +84,9 @@ public class MainActivity extends BaseTitleBarActivity<MainPresenter> implements
         rvContent.setAdapter(mModularGridViewAdapter);
         rvContent.setLayoutManager(gridLayoutManager);
 
-        RelativeLayout.LayoutParams layoutParams =new RelativeLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+        RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
         layoutParams.addRule(RelativeLayout.CENTER_IN_PARENT);
-        rlContent.addView(rvContent,layoutParams);
+        rlContent.addView(rvContent, layoutParams);
         mModularGridViewAdapter.setOnModularClickListener(view -> {
             ModularBean childrenModuler = (ModularBean) view.getTag();
             LaunchUtil.launchActivity(this, childrenModuler);
@@ -93,7 +98,8 @@ public class MainActivity extends BaseTitleBarActivity<MainPresenter> implements
     public void initTitleBar(BaseTitleBar titleBar) {
         tvTitle = (TextView) titleBar.center;
         titleBar.left.setVisibility(View.GONE);
-
+        titleBar.right.setVisibility(View.VISIBLE);
+        titleBar.right.setOnClickListener(view -> mainMenuPop.showPopupWindow(titleBar.right));
     }
 
 }

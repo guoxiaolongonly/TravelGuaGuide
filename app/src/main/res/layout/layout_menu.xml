@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="300px"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="16px"
+        android:background="@color/white"
+        android:orientation="vertical"
+       >
+
+        <TextView
+            android:id="@+id/tvRefresh"
+            android:layout_width="match_parent"
+            android:layout_height="120px"
+            android:gravity="center_vertical"
+            android:text="更新数据"
+            android:paddingLeft="20px"
+            android:background="?android:selectableItemBackground"
+            android:textColor="@color/textColorPrimary"
+            android:textSize="48px" />
+
+        <View style="@style/divider_horizontal" />
+
+        <TextView
+            android:id="@+id/tvAbout"
+            android:layout_width="match_parent"
+            android:layout_height="120px"
+            android:paddingLeft="20px"
+            android:gravity="center_vertical"
+            android:text="关于"
+            android:background="?android:selectableItemBackground"
+            android:textColor="@color/textColorPrimary"
+            android:textSize="48px" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+</FrameLayout>
