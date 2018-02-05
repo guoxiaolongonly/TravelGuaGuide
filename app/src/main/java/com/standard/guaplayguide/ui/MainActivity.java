@@ -4,7 +4,6 @@ import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.PopupWindow;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
@@ -15,6 +14,7 @@ import com.standard.guaplayguide.bean.ModularBean;
 import com.standard.guaplayguide.ui.adapter.LargerGridViewAdapter;
 import com.standard.guaplayguide.ui.presenter.MainPresenter;
 import com.standard.guaplayguide.ui.view.IMainView;
+import com.standard.guaplayguide.ui.widget.ppw.MainMenuPop;
 import com.standard.guaplayguide.utils.Constant;
 import com.standard.guaplayguide.utils.LaunchUtil;
 

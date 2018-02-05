@@ -15,6 +15,7 @@ import com.standard.guaplayguide.bean.ModularBean;
 import com.standard.guaplayguide.ui.adapter.LargerGridViewAdapter;
 import com.standard.guaplayguide.ui.presenter.MainPresenter;
 import com.standard.guaplayguide.ui.view.IMainView;
+import com.standard.guaplayguide.ui.widget.dialog.ModularDetailDialog;
 import com.standard.guaplayguide.utils.Constant;
 import com.standard.guaplayguide.utils.LaunchUtil;
 
@@ -94,12 +95,12 @@ public class CommonActivity extends BaseTitleBarActivity {
         RelativeLayout.LayoutParams layoutParams = new RelativeLayout
                 .LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
         layoutParams.addRule(RelativeLayout.CENTER_HORIZONTAL);
-        layoutParams.setMargins(0,60,0,0);
+        layoutParams.setMargins(0, 60, 0, 0);
         rlContent.addView(rvContent, layoutParams);
         mModularGridViewAdapter.setOnModularClickListener(view -> {
             ModularBean childrenModuler = (ModularBean) view.getTag();
             if (childrenModuler.dataType == 0) {
-                showPopupWindow(childrenModuler);
+                showResultDialog(childrenModuler);
             } else {
                 LaunchUtil.launchActivity(this, childrenModuler);
             }
@@ -107,8 +108,8 @@ public class CommonActivity extends BaseTitleBarActivity {
 
     }
 
-    private void showPopupWindow(ModularBean childrenModuler) {
-
+    private void showResultDialog(ModularBean childrenModuler) {
+        ModularDetailDialog.getInstance(this).showDialog(childrenModuler);
     }
 
 

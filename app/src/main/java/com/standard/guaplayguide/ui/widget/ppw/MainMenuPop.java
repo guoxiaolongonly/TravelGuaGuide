@@ -1,11 +1,12 @@
-package com.standard.guaplayguide.ui;
+package com.standard.guaplayguide.ui.widget.ppw;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.TextView;
 
 import com.standard.guaplayguide.R;
-import com.standard.guaplayguide.ui.widget.BaseMenuPpw;
+import com.standard.guaplayguide.ui.AboutActivity;
+import com.standard.guaplayguide.ui.widget.ppw.BaseMenuPpw;
 import com.standard.guaplayguide.utils.LaunchUtil;
 
 /**
