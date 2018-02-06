@@ -57,7 +57,7 @@
         {
           "title": "技术帝玩法",
           "dataType": 301,
-          "webUrl":""
+          "webUrl": ""
         }
       ]
     },
@@ -121,16 +121,124 @@
       "dataType": 102,
       "childrenModular": [
         {
-          "title": "艾蒿小麦饼",
-          "imageUrl": "xxx.png",
+          "title": "烤饼",
+          "imageUrl": "https://raw.githubusercontent.com/guoxiaolongonly/TravelGuaGuide/master/shop/烤饼.jpg",
           "dataType": 0,
-          "describe": "这是一个恐怖的螃蟹！！"
+          "describe": "价格：10棵草\n描述：最为简单的主食。吃完了感觉还是有点饿就出门了"
         },
         {
-          "title": "道具2",
-          "imageUrl": "xxx.png",
+          "title": "巨石三明治",
+          "imageUrl": "https://raw.githubusercontent.com/guoxiaolongonly/TravelGuaGuide/master/shop/巨石三明治.jpg",
           "dataType": 0,
-          "describe": "这是一只恐怖的蜗牛！！"
+          "describe": "价格：20棵草\n描述：草草了事的快餐"
+        },
+        {
+          "title": "南瓜百吉饼",
+          "imageUrl": "https://raw.githubusercontent.com/guoxiaolongonly/TravelGuaGuide/master/shop/南瓜百吉饼.jpg",
+          "dataType": 0,
+          "describe": "价格：50棵草\n描述：分量充足，适合出门远游"
+        },
+        {
+          "title": "乳蛋饼",
+          "imageUrl": "https://raw.githubusercontent.com/guoxiaolongonly/TravelGuaGuide/master/shop/乳蛋饼.jpg",
+          "dataType": 0,
+          "describe": "价格：80棵草\n描述：口感比较好，吃了会早点回家"
+        },
+        {
+          "title": "艾蒿小麦饼",
+          "imageUrl": "https://raw.githubusercontent.com/guoxiaolongonly/TravelGuaGuide/master/shop/艾蒿小麦饼.jpg",
+          "dataType": 0,
+          "describe": "价格：100棵草\n描述：适合去热的地方吃"
+        },
+        {
+          "title": "辣葱饼",
+          "imageUrl": "https://raw.githubusercontent.com/guoxiaolongonly/TravelGuaGuide/master/shop/辣葱饼.jpg",
+          "dataType": 0,
+          "describe": "价格：100棵草\n描述：适合去冷的地方吃"
+        },
+        {
+          "title": "幸运铃铛",
+          "imageUrl": "https://raw.githubusercontent.com/guoxiaolongonly/TravelGuaGuide/master/shop/幸运铃铛.jpg",
+          "dataType": 0,
+          "describe": "价格：3000棵草\n描述：可重复使用"
+        },
+        {
+          "title": "幸运铃铛",
+          "imageUrl": "https://raw.githubusercontent.com/guoxiaolongonly/TravelGuaGuide/master/shop/幸运铃铛.jpg",
+          "dataType": 0,
+          "describe": "价格：10棵草\n描述：可爱的小麦饼！！"
+        },
+        {
+          "title": "质地不好的土色包袱皮",
+          "imageUrl": "https://raw.githubusercontent.com/guoxiaolongonly/TravelGuaGuide/master/shop/质地不好的土色包袱皮.jpg",
+          "dataType": 0,
+          "describe": "价格：150棵草\n描述：上街玩用的。"
+        },
+        {
+          "title": "树色包袱皮",
+          "imageUrl": "https://raw.githubusercontent.com/guoxiaolongonly/TravelGuaGuide/master/shop/树色包袱皮.jpg",
+          "dataType": 0,
+          "describe": "价格：250棵草\n描述：上街玩用的。"
+        },
+        {
+          "title": "迷彩包袱皮",
+          "imageUrl": "https://raw.githubusercontent.com/guoxiaolongonly/TravelGuaGuide/master/shop/迷彩包袱皮.jpg",
+          "dataType": 0,
+          "describe": "价格：400棵草\n描述：上街玩用的。"
+        },
+        {
+          "title": "入门帐篷",
+          "imageUrl": "https://raw.githubusercontent.com/guoxiaolongonly/TravelGuaGuide/master/shop/入门帐篷.jpg",
+          "dataType": 0,
+          "describe": "价格：300棵草\n描述：帐篷适合野营。"
+        },
+        {
+          "title": "标准帐篷",
+          "imageUrl": "https://raw.githubusercontent.com/guoxiaolongonly/TravelGuaGuide/master/shop/标准帐篷.jpg",
+          "dataType": 0,
+          "describe": "价格：450棵草\n描述：帐篷适合野营。"
+        },
+        {
+          "title": "专业帐篷",
+          "imageUrl": "https://raw.githubusercontent.com/guoxiaolongonly/TravelGuaGuide/master/shop/专业帐篷.jpg",
+          "dataType": 0,
+          "describe": "价格：750棵草\n描述：帐篷适合野营。"
+        },
+        {
+          "title": "玻璃碗",
+          "imageUrl": "https://raw.githubusercontent.com/guoxiaolongonly/TravelGuaGuide/master/shop/玻璃碗.jpg",
+          "dataType": 0,
+          "describe": "价格：450棵草\n描述：出门当船用。"
+        },
+        {
+          "title": "木碗",
+          "imageUrl": "https://raw.githubusercontent.com/guoxiaolongonly/TravelGuaGuide/master/shop/木碗.jpg",
+          "dataType": 0,
+          "describe": "价格：750棵草\n描述：出门当船用。"
+        },
+        {
+          "title": "漆碗",
+          "imageUrl": "https://raw.githubusercontent.com/guoxiaolongonly/TravelGuaGuide/master/shop/漆碗.jpg",
+          "dataType": 0,
+          "describe": "价格：1200棵草\n描述：出门当船用。"
+        },
+        {
+          "title": "蜡烛",
+          "imageUrl": "https://raw.githubusercontent.com/guoxiaolongonly/TravelGuaGuide/master/shop/蜡烛.jpg",
+          "dataType": 0,
+          "describe": "价格：600棵草\n描述：据说可以降低迷路的几率，适合去山洞等地方探险。"
+        },
+        {
+          "title": "手提灯笼",
+          "imageUrl": "https://raw.githubusercontent.com/guoxiaolongonly/TravelGuaGuide/master/shop/手提灯笼.jpg",
+          "dataType": 0,
+          "describe": "价格：900棵草\n描述：据说可以降低迷路的几率，适合去山洞等地方探险。"
+        },
+        {
+          "title": "手提玻璃灯",
+          "imageUrl": "https://raw.githubusercontent.com/guoxiaolongonly/TravelGuaGuide/master/shop/手提玻璃灯.jpg",
+          "dataType": 0,
+          "describe": "价格：1500棵草\n描述：据说可以降低迷路的几率，适合去山洞等地方探险。"
         }
       ]
     },
