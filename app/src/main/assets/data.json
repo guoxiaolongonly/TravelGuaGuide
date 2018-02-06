@@ -336,16 +336,64 @@
       "dataType": 102,
       "childrenModular": [
         {
-          "title": "收藏品1",
-          "imageUrl": "xxx.png",
+          "title": "鸠笛",
+          "imageUrl": "https://raw.githubusercontent.com/guoxiaolongonly/TravelGuaGuide/master/collect/鸠笛.png",
           "dataType": 0,
-          "describe": "这是一个恐怖的螃蟹！！"
+          "describe": "描述：用土烧制的鸠状笛子，会发出ho- ho-的温柔的音色。\n方位：东北地方 \n产地：奥入濑溪流苔桥 \n获取：（抽奖）青色护身符，（抽奖）北方车票，耐寒食物"
         },
         {
-          "title": "收藏品2",
-          "imageUrl": "xxx.png",
+          "title": "木质便当盒",
+          "imageUrl": "https://raw.githubusercontent.com/guoxiaolongonly/TravelGuaGuide/master/collect/木质便当盒.png",
           "dataType": 0,
-          "describe": "这是一只恐怖的蜗牛！！"
+          "describe": "描述：用木头制成的令人怀念的便当盒，（盛在其中）饭也变得美味起来\n方位：东北地方 \n产地：入道崎灯台 \n获取：（抽奖）青色护身符，（抽奖）北方车票，耐寒食物。"
+        },
+        {
+          "title": "福达摩",
+          "imageUrl": "https://raw.githubusercontent.com/guoxiaolongonly/TravelGuaGuide/master/collect/福达摩.png",
+          "dataType": 0,
+          "describe": "描述：表情有点可怕的红色摆件，眼睛还没有画上去（画达摩点睛？？）\n方位：关东地方 \n产地：群马县，草津温泉 \n获取：（抽奖）黄色护身符，（抽奖）东方车票，（抽奖）橙色胡萝卜包。"
+        },
+        {
+          "title": "装饰木梳",
+          "imageUrl": "https://raw.githubusercontent.com/guoxiaolongonly/TravelGuaGuide/master/collect/装饰木梳.png",
+          "dataType": 0,
+          "describe": "描述：很顺手的木梳子，插入头发的最好装饰品。\n方位：中部地方 \n产地：长野县，信州善光寺 \n获取：普通食物（非耐寒耐热），（抽奖）绿色毛豆面包。"
+        },
+        {
+          "title": "招财猫",
+          "imageUrl": "https://raw.githubusercontent.com/guoxiaolongonly/TravelGuaGuide/master/collect/招财猫.png",
+          "dataType": 0,
+          "describe": "描述：看上去很重的猫咪摆件，似乎能够招来幸运。\n方位：中部地方 \n产地：爱知县， 名古屋城 \n获取：普通食物（非耐寒耐热），（抽奖）绿色毛豆面包。"
+        },
+        {
+          "title": "金扇子",
+          "imageUrl": "https://raw.githubusercontent.com/guoxiaolongonly/TravelGuaGuide/master/collect/金扇子.png",
+          "dataType": 0,
+          "describe": "描述：闪闪发亮的金色扇子，可以扮演公主。\n方位：近畿地方 \n产地：京都府，天桥立 \n获取：（抽奖）白色护身符，（抽奖）西方车票，普通食物（非耐寒耐热）。"
+        },
+        {
+          "title": "古旧的火柴",
+          "imageUrl": "https://raw.githubusercontent.com/guoxiaolongonly/TravelGuaGuide/master/collect/古旧的火柴.png",
+          "dataType": 0,
+          "describe": "描述：贴着老旧标签的火柴，可以勾起很多回忆。\n方位：近畿地方 \n产地：兵库县，有马温泉 \n获取：（抽奖）白色护身符，（抽奖）西方车票，包袱皮，南瓜百吉饼。"
+        },
+        {
+          "title": "蚊香猪架",
+          "imageUrl": "https://raw.githubusercontent.com/guoxiaolongonly/TravelGuaGuide/master/collect/蚊香猪架.png",
+          "dataType": 0,
+          "describe": "描述：憨憨的猪造型的驱蚊器，也可以称作是夏天的风物诗（风物诗：对应的季节时对应的事物）。\n方位：近畿地方 \n产地：京都府，宇治桥 \n获取：（抽奖）白色护身符，（抽奖）西方车票，包袱皮，南瓜百吉饼。"
+        },
+        {
+          "title": "竹篮",
+          "imageUrl": "https://raw.githubusercontent.com/guoxiaolongonly/TravelGuaGuide/master/collect/竹篮.png",
+          "dataType": 0,
+          "describe": "描述：柔韧的竹子做的篮，越用越能散发（竹子的）清香。\n方位：九州地方 \n产地：大分县， 別府温泉 \n获取：（抽奖）红色护身符，（抽奖）南方车票，（抽奖）灰色，牛蒡面包，艾蒿小麦饼，山蒜乳蛋饼。"
+        },
+        {
+          "title": "月兔纽扣",
+          "imageUrl": "https://raw.githubusercontent.com/guoxiaolongonly/TravelGuaGuide/master/collect/月兔纽扣.png",
+          "dataType": 0,
+          "describe": "描述：有月兔图案的陶瓷按钮，细致的绘画能感受到积淀的文化。\n方位：九州地方 \n产地：鹿儿岛县，绳文杉 \n获取：（抽奖）红色护身符，（抽奖）南方车票，（抽奖）灰色，牛蒡面包，艾蒿小麦饼，山蒜乳蛋饼"
         }
       ]
     }
