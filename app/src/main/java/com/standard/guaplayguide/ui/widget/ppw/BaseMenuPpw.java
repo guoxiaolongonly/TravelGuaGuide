@@ -1,4 +1,4 @@
-package com.standard.guaplayguide.ui.widget;
+package com.standard.guaplayguide.ui.widget.ppw;
 
 import android.animation.Animator;
 import android.animation.ObjectAnimator;
@@ -33,7 +33,7 @@ public abstract class BaseMenuPpw extends PopupWindow implements Animator.Animat
 
     public BaseMenuPpw() {
         super(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
-        setBackgroundDrawable(new ColorDrawable(0x55000000));
+//        setBackgroundDrawable(new ColorDrawable(0x55000000));
         setAnimationStyle(R.style.popwin_anim);
         setOutsideTouchable(true);
 

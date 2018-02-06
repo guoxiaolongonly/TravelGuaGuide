@@ -96,22 +96,16 @@ android {
         //自动多渠道打包
         productFlavors {
             xiaomi {
-                dimension "company"
             }
             baidu {
-                dimension "company"
             }
             yyb {
-                dimension "company"
             }
             pp {
-                dimension "company"
             }
             z360 {
-                dimension "company"
             }
             huawei {
-                dimension "company"
             }
         }
         configurations.all {
