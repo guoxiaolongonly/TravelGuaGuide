@@ -30,16 +30,16 @@ android {
         multiDexEnabled true
         signingConfigs {
             debug {
-//                storeFile file(KEYSTORE)
-//                storePassword STORE_PASSWORD
-//                keyAlias KEYALIAS
-//                keyPassword KEY_PASSWORD
+                storeFile file(KEYSTORE)
+                storePassword STORE_PASSWORD
+                keyAlias KEYALIAS
+                keyPassword KEY_PASSWORD
             }
             release {
-//                storeFile file(KEYSTORE)
-//                storePassword STORE_PASSWORD
-//                keyAlias KEYALIAS
-//                keyPassword KEY_PASSWORD
+                storeFile file(KEYSTORE)
+                storePassword STORE_PASSWORD
+                keyAlias KEYALIAS
+                keyPassword KEY_PASSWORD
             }
         }
         buildTypes {
@@ -149,7 +149,7 @@ def getVersionName() {
 }
 // 获取程序名称
 def getProductName() {
-    return "食安云厨"
+    return "旅行青蛙攻略"
 }
 // 获取当前系统时间
 def releaseTime() {
