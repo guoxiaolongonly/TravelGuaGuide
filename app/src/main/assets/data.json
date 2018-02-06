@@ -158,12 +158,6 @@
           "describe": "获得方式：收集30 个温泉馒头"
         },
         {
-          "title": "馒头好恐怖（まんじゅう怖い）",
-          "imageUrl": "",
-          "dataType": 0,
-          "describe": "获得方式：收集30 个温泉馒头"
-        },
-        {
           "title": "求神庇佑（かみだのみ）",
           "imageUrl": "",
           "dataType": 0,
@@ -305,28 +299,172 @@
       "dataType": 103,
       "childrenModular": [
         {
-          "title": "特产1",
-          "imageUrl": "xxx.png",
+          "title": "南部煎饼",
+          "imageUrl": "https://raw.githubusercontent.com/guoxiaolongonly/TravelGuaGuide/master/specialty/南部煎饼.png",
           "dataType": 0,
-          "describe": "这是一个恐怖的特产！！"
+          "describe": "描述：南部煎饼是一种以小麦粉为原料的煎饼，诞生于旧八户藩地区，因为八户南部曾为这里的藩主，因此得名。\n方位：东北地方 \n获取：（抽奖）青色护身符，（抽奖）北方车票，耐寒食物"
         },
         {
-          "title": "特产2",
-          "imageUrl": "xxx.png",
+          "title": "切米糕",
+          "imageUrl": "https://raw.githubusercontent.com/guoxiaolongonly/TravelGuaGuide/master/specialty/切米糕.png",
           "dataType": 0,
-          "describe": "这是一个恐怖的特产！！"
+          "describe": "描述：秋田地区特产。把煮好的米饭捣碎，涂在杉木串上烤制而成的食品，也指以此为主料的火锅。\n方位：东北地方 \n获取：（抽奖）青色护身符，（抽奖）北方车票，耐寒食物"
         },
         {
-          "title": "特产2",
-          "imageUrl": "xxx.png",
+          "title": "烤团子",
+          "imageUrl": "https://raw.githubusercontent.com/guoxiaolongonly/TravelGuaGuide/master/specialty/烤团子.png",
           "dataType": 0,
-          "describe": "这是一个恐怖的特产！！"
+          "describe": "描述：涂有甜酱汁的团子，要趁热吃。\n方位：关东地方 \n获取：（抽奖）黄色护身符，（抽奖）东方车票，（抽奖）橙色胡萝卜包。"
         },
         {
-          "title": "特产2",
-          "imageUrl": "xxx.png",
+          "title": "五平饼",
+          "imageUrl": "https://raw.githubusercontent.com/guoxiaolongonly/TravelGuaGuide/master/specialty/五平饼.png",
           "dataType": 0,
-          "describe": "这是一个恐怖的特产！！"
+          "describe": "描述：五平饼(日语的“饼”是年糕的意思”)是木曾地区与伊那地区的地方料理。它是一种米饭串烧,属于以长野县为中心的中部地区南部山间传统的乡土料理。\n方位：中部地方 \n获取：普通食物（非耐寒耐热），（抽奖）绿色毛豆面包。"
+        },
+        {
+          "title": "外郎米粉糕",
+          "imageUrl": "https://raw.githubusercontent.com/guoxiaolongonly/TravelGuaGuide/master/specialty/外郎米粉糕.png",
+          "dataType": 0,
+          "describe": "描述：很有弹性的点心，很有嚼头。外郎糕是在米粉中加入红糖等蒸制的糕点，名古屋、山口县等地的特产。\n方位：中部地方 \n获取：普通食物（非耐寒耐热），（抽奖）绿色毛豆面包。"
+        },
+        {
+          "title": "五色豆",
+          "imageUrl": "https://raw.githubusercontent.com/guoxiaolongonly/TravelGuaGuide/master/specialty/五色豆.png",
+          "dataType": 0,
+          "describe": "描述：色彩丰富的五彩的豆子零食，根本停不下来。\n方位：近畿地方 \n获取：（抽奖）白色护身符，（抽奖）西方车票，包袱皮，南瓜百吉饼。"
+        },
+        {
+          "title": "瓦片煎饼",
+          "imageUrl": "https://raw.githubusercontent.com/guoxiaolongonly/TravelGuaGuide/master/specialty/瓦片煎饼.png",
+          "dataType": 0,
+          "describe": "描述：看上去像瓦片的煎饼，但没有瓦片那么硬。\n方位：近畿地方 \n获取：（抽奖）白色护身符，（抽奖）西方车票，包袱皮，南瓜百吉饼。"
+        },
+        {
+          "title": "坚烧",
+          "imageUrl": "https://raw.githubusercontent.com/guoxiaolongonly/TravelGuaGuide/master/specialty/坚烧.png",
+          "dataType": 0,
+          "describe": "描述：日本最硬的煎饼，大概是忍者携带的食物吧。\n方位：近畿地方 \n获取：（抽奖）白色护身符，（抽奖）西方车票，包袱皮，南瓜百吉饼。"
+        },
+        {
+          "title": "瘦马",
+          "imageUrl": "https://raw.githubusercontent.com/guoxiaolongonly/TravelGuaGuide/master/specialty/瘦马.png",
+          "dataType": 0,
+          "describe": "描述：涂满黄豆粉的面团的点心，之前令人怀念的当地的味道。方位：九州地方 \n获取：（抽奖）红色护身符，（抽奖）南方车票，（抽奖）灰色，牛蒡面包，艾蒿小麦饼，山蒜乳蛋饼。"
+        },
+        {
+          "title": "轻羹",
+          "imageUrl": "https://raw.githubusercontent.com/guoxiaolongonly/TravelGuaGuide/master/specialty/轻羹.png",
+          "dataType": 0,
+          "describe": "描述：口感松软的白色糕点，可作为茶席的糕点使用哦。方位：九州地方 \n获取：（抽奖）红色护身符，（抽奖）南方车票，（抽奖）灰色，牛蒡面包，艾蒿小麦饼，山蒜乳蛋饼。"
+        },
+        {
+          "title": ".温泉馒头",
+          "imageUrl": "https://raw.githubusercontent.com/guoxiaolongonly/TravelGuaGuide/master/specialty/温泉馒头.png",
+          "dataType": 0,
+          "describe": "描述：柔软的红糖馒头，是温泉地的传统特产。蛙的朋友们都爱吃！！"
+        },
+        {
+          "title": "米",
+          "imageUrl": "https://raw.githubusercontent.com/guoxiaolongonly/TravelGuaGuide/master/specialty/米.png",
+          "dataType": 0,
+          "describe": "描述：有光泽的好米，是所有小菜的配角。"
+        },
+        {
+          "title": "卷心菜",
+          "imageUrl": "https://raw.githubusercontent.com/guoxiaolongonly/TravelGuaGuide/master/specialty/卷心菜.png",
+          "dataType": 0,
+          "describe": "描述：沉甸甸的蔬菜，有绿叶很新鲜。"
+        },
+        {
+          "title": "大蒜",
+          "imageUrl": "https://raw.githubusercontent.com/guoxiaolongonly/TravelGuaGuide/master/specialty/大蒜.png",
+          "dataType": 0,
+          "describe": "描述：释放出强烈气味的蔬菜，推荐想要振作的时候使用（啥啥啥？？？）"
+        },
+        {
+          "title": "藠头",
+          "imageUrl": "https://raw.githubusercontent.com/guoxiaolongonly/TravelGuaGuide/master/specialty/藠头.png",
+          "dataType": 0,
+          "describe": "描述：咬下去咔擦一响的蔬菜，喜欢的味道是做成腌渍物。"
+        },
+        {
+          "title": "辣椒",
+          "imageUrl": "https://raw.githubusercontent.com/guoxiaolongonly/TravelGuaGuide/master/specialty/辣椒.png",
+          "dataType": 0,
+          "describe": "描述：怎么能这么辣的蔬菜。喜欢辣的人会非常喜欢。"
+        },
+        {
+          "title": "草莓",
+          "imageUrl": "https://raw.githubusercontent.com/guoxiaolongonly/TravelGuaGuide/master/specialty/草莓.png",
+          "dataType": 0,
+          "describe": "描述：酸甜的水果，会散发甜甜的香气。"
+        },
+        {
+          "title": "柿子",
+          "imageUrl": "https://raw.githubusercontent.com/guoxiaolongonly/TravelGuaGuide/master/specialty/柿子.png",
+          "dataType": 0,
+          "describe": "描述：橙色的果实  富含营养不再需要医生啦（一天一柿子，医生远离我？？？）"
+        },
+        {
+          "title": "栗子",
+          "imageUrl": "https://raw.githubusercontent.com/guoxiaolongonly/TravelGuaGuide/master/specialty/栗子.png",
+          "dataType": 0,
+          "describe": "描述：被刺壳包裹的果实，为了吃到美食需要耐力。"
+        },
+        {
+          "title": "香蕉",
+          "imageUrl": "https://raw.githubusercontent.com/guoxiaolongonly/TravelGuaGuide/master/specialty/香蕉.png",
+          "dataType": 0,
+          "describe": "描述：有滑溜溜果肉的水果，吃完要马上扔进垃圾桶哦。（扔在外面会让人摔倒哒）"
+        },
+        {
+          "title": "橘子",
+          "imageUrl": "https://raw.githubusercontent.com/guoxiaolongonly/TravelGuaGuide/master/specialty/橘子.png",
+          "dataType": 0,
+          "describe": "描述：适当酸味的水果，吃多了皮肤会变黄。（你站在此地不要动）"
+        },
+        {
+          "title": "桃子",
+          "imageUrl": "https://raw.githubusercontent.com/guoxiaolongonly/TravelGuaGuide/master/specialty/桃子.png",
+          "dataType": 0,
+          "describe": "描述：有芳香气味的水果，从很久之前开始便是吉祥的象征。"
+        },
+        {
+          "title": "洋葱",
+          "imageUrl": "https://raw.githubusercontent.com/guoxiaolongonly/TravelGuaGuide/master/specialty/洋葱.png",
+          "dataType": 0,
+          "describe": "描述：有皮包裹着的蔬菜，切了就会泪流不止。"
+        },
+        {
+          "title": "苹果",
+          "imageUrl": "https://raw.githubusercontent.com/guoxiaolongonly/TravelGuaGuide/master/specialty/苹果.png",
+          "dataType": 0,
+          "describe": "描述：超甜的水果，大概有长久的历史。"
+        },
+        {
+          "title": "牛奶",
+          "imageUrl": "https://raw.githubusercontent.com/guoxiaolongonly/TravelGuaGuide/master/specialty/牛奶.png",
+          "dataType": 0,
+          "describe": "描述：有浓浓味道的牛奶，喝了就能骨骼强健。"
+        },
+        {
+          "title": "奶酪",
+          "imageUrl": "https://raw.githubusercontent.com/guoxiaolongonly/TravelGuaGuide/master/specialty/奶酪.png",
+          "dataType": 0,
+          "describe": "描述：由牛奶发酵而产生的食物，会变化为各种各样的味道。"
+        },
+        {
+          "title": "茶叶",
+          "imageUrl": "https://raw.githubusercontent.com/guoxiaolongonly/TravelGuaGuide/master/specialty/茶叶.png",
+          "dataType": 0,
+          "describe": "描述：味道不错的茶叶，追求更好喝。"
+        },
+        {
+          "title": "水",
+          "imageUrl": "https://raw.githubusercontent.com/guoxiaolongonly/TravelGuaGuide/master/specialty/水.png",
+          "dataType": 0,
+          "describe": "描述：合口味的优良水，能够引导出食材的味道。"
         }
       ]
     },
