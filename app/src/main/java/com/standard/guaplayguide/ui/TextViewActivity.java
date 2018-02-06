@@ -1,6 +1,7 @@
 package com.standard.guaplayguide.ui;
 
 import android.os.Bundle;
+import android.widget.TextView;
 
 import com.standard.guaplayguide.R;
 import com.standard.guaplayguide.base.BaseTitleBar;
@@ -15,14 +16,23 @@ import com.standard.guaplayguide.bean.ModularBean;
  */
 
 public class TextViewActivity extends BaseTitleBarActivity {
+    private ModularBean modularBean;
+    private TextView tvContent;
 
     public static Bundle buildBundle(ModularBean modularBean) {
-        return null;
+        Bundle bundle = new Bundle();
+        bundle.putSerializable("modular", modularBean);
+        return bundle;
     }
 
     @Override
     public void initTitleBar(BaseTitleBar titleBar) {
+        titleBar.setTitleText(modularBean.title);
+    }
 
+    @Override
+    public void getExtra() {
+        modularBean = (ModularBean) getIntent().getSerializableExtra("modular");
     }
 
     @Override
@@ -32,7 +42,8 @@ public class TextViewActivity extends BaseTitleBarActivity {
 
     @Override
     protected void init() {
-
+        tvContent = findView(R.id.tvContent);
+        tvContent.setText(modularBean.describe);
     }
 
     @Override

@@ -22,21 +22,10 @@ public class ModularDetailDialog extends BaseAnimDialog {
     private TextView tvTitle;
     private TextView tvContent;
     private ImageView ivImage;
-    private static ModularDetailDialog modularDetailDialog;
 
 
-    public static ModularDetailDialog getInstance(Context context) {
-        if (modularDetailDialog == null) {
-            synchronized (AppContext.class) {
-                if (modularDetailDialog == null) {
-                    modularDetailDialog = new ModularDetailDialog(context);
-                }
-            }
-        }
-        return modularDetailDialog;
-    }
 
-    protected ModularDetailDialog(Context context) {
+    public ModularDetailDialog(Context context) {
         super(context);
     }
 

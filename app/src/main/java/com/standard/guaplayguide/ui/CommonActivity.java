@@ -27,6 +27,7 @@ public class CommonActivity extends BaseTitleBarActivity {
     private LargerGridViewAdapter mModularGridViewAdapter;
     private TextView tvTitle;
     private ModularBean mModularBean;
+    private ModularDetailDialog modularDetailDialog;
 
     public static Bundle buildBundle(ModularBean modularBean) {
         Bundle bundle = new Bundle();
@@ -54,6 +55,7 @@ public class CommonActivity extends BaseTitleBarActivity {
         rlContent = findView(R.id.rlContent);
         tvTitle.setText(mModularBean.title);
         initRecyclerView(mModularBean);
+        modularDetailDialog = new ModularDetailDialog(this);
     }
 
     @Override
@@ -89,11 +91,10 @@ public class CommonActivity extends BaseTitleBarActivity {
             default:
                 break;
         }
-
         rvContent.setAdapter(mModularGridViewAdapter);
         rvContent.setLayoutManager(gridLayoutManager);
         RelativeLayout.LayoutParams layoutParams = new RelativeLayout
-                .LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+                .LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
         layoutParams.addRule(RelativeLayout.CENTER_HORIZONTAL);
         layoutParams.setMargins(0, 60, 0, 0);
         rlContent.addView(rvContent, layoutParams);
@@ -109,7 +110,7 @@ public class CommonActivity extends BaseTitleBarActivity {
     }
 
     private void showResultDialog(ModularBean childrenModuler) {
-        ModularDetailDialog.getInstance(this).showDialog(childrenModuler);
+        modularDetailDialog.showDialog(childrenModuler);
     }
 
 

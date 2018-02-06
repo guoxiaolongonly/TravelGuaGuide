@@ -17,11 +17,11 @@
           "dataType": 201,
           "childrenModular": [
             {
-              "describe": "基本玩法段落1",
+              "title": "基本玩法段落1",
               "imageUrl": "xxx.png"
             },
             {
-              "describe": "基本玩法段落2",
+              "title": "基本玩法段落2",
               "imageUrl": "xxx.png"
             }
           ]
@@ -31,11 +31,11 @@
           "dataType": 201,
           "childrenModular": [
             {
-              "describe": "进阶玩法段落1",
+              "title": "进阶玩法段落1",
               "imageUrl": "xxx.png"
             },
             {
-              "describe": "进阶玩法段落2",
+              "title": "进阶玩法段落2",
               "imageUrl": "xxx.png"
             }
           ]
@@ -45,14 +45,19 @@
           "dataType": 201,
           "childrenModular": [
             {
-              "describe": "骨灰玩法段落1",
+              "title": "骨灰玩法段落1",
               "imageUrl": "xxx.png"
             },
             {
-              "describe": "骨灰玩法段落2",
+              "title": "骨灰玩法段落2",
               "imageUrl": "xxx.png"
             }
           ]
+        },
+        {
+          "title": "技术帝玩法",
+          "dataType": 301,
+          "webUrl":""
         }
       ]
     },
@@ -72,6 +77,16 @@
           "imageUrl": "xxx.png",
           "dataType": 0,
           "describe": "这是一只恐怖的蜗牛！！"
+        },
+        {
+          "title": "测试web",
+          "webUrl": "http://www.baidu.com",
+          "dataType": 301
+        },
+        {
+          "title": "测试Text",
+          "describe": "嗨你没有小鸡鸡",
+          "dataType": 302
         }
       ]
     },
@@ -149,7 +164,7 @@
           "dataType": 0,
           "describe": "这是一个恐怖的特产！！"
         }
-        ]
+      ]
     },
     {
       "title": "收藏品介绍",
