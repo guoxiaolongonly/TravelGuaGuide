@@ -55,10 +55,10 @@ public class LaunchActivity extends BaseActivity {
                         //加载Asset数据并存放到Local中
                         String jsonStr = AssetReadUtil.getJson(this, "Data.json");
                         SPHelp.setAppParam(BuildConfig.KEY_DATA_RECORD, jsonStr);
-                        LaunchUtil.launchActivity(this, MainActivity.class);
                     }
                     finish();
                     overridePendingTransition(0, 0);
+                    LaunchUtil.launchActivity(this, MainActivity.class);
                 });
     }
 
