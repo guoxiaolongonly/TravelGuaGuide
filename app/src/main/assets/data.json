@@ -67,51 +67,113 @@
       "dataType": 102,
       "childrenModular": [
         {
-          "title": "螃蟹",
-          "imageUrl": "xxx.png",
-          "dataType": 0,
-          "describe": "这是一个恐怖的螃蟹！！"
-        },
-        {
           "title": "蜗牛",
-          "imageUrl": "xxx.png",
-          "dataType": 0,
-          "describe": "这是一只恐怖的蜗牛！！"
+          "imageUrl": "https://raw.githubusercontent.com/guoxiaolongonly/TravelGuaGuide/master/animalLike/蜗牛.jpg",
+          "dataType": 201,
+          "childrenModular": [
+            {
+              "title": "出现的反应：\n \n感觉十分满意很开心的样子：奶酪，温泉馒头，牛奶，米\n感觉很高兴的样子：藠头，大蒜，辣椒，洋葱，切米糕，卷心菜，五平饼，烤团子\n肚子已经饱了：\n已经吃不下了：栗子，茶叶",
+              "dataType": -1,
+              "imageUrl": "https://raw.githubusercontent.com/guoxiaolongonly/TravelGuaGuide/master/animalLike/蜗牛爱吃.jpg"
+            }
+          ]
         },
         {
-          "title": "测试web",
-          "webUrl": "http://www.baidu.com",
-          "dataType": 301
+          "title": "蜜蜂",
+          "imageUrl": "https://raw.githubusercontent.com/guoxiaolongonly/TravelGuaGuide/master/animalLike/蜜蜂.jpg",
+          "dataType": 201,
+          "childrenModular": [
+            {
+              "title": "出现的反应：\n \n感觉十分满意很开心的样子：五色豆，草莓，桃子，温泉馒头\n感觉很高兴的样子：外郎米粉糕，水，橘子，苹果，柿子\n肚子已经饱了：\n已经吃不下了：辣椒，卷心菜，栗子，坚烧，牛奶，五平饼，大蒜，米",
+              "dataType": -1,
+              "imageUrl": "https://raw.githubusercontent.com/guoxiaolongonly/TravelGuaGuide/master/animalLike/蜜蜂爱吃.jpg"
+            }
+          ]
         },
         {
-          "title": "测试Text",
-          "describe": "嗨你没有小鸡鸡",
-          "dataType": 302
+          "title": "乌龟",
+          "imageUrl": "https://raw.githubusercontent.com/guoxiaolongonly/TravelGuaGuide/master/animalLike/乌龟.jpg",
+          "dataType": 201,
+          "childrenModular": [
+            {
+              "title": "出现的反应：\n \n感觉十分满意很开心的样子：茶叶，温泉馒头。\n感觉很高兴的样子：藠头，坚烧，柿子，水，栗子\n肚子已经饱饱了：卷心菜\n已经吃不下了：其他",
+              "dataType": -1,
+              "imageUrl": "https://raw.githubusercontent.com/guoxiaolongonly/TravelGuaGuide/master/animalLike/乌龟爱吃.jpg"
+            }
+          ]
         }
       ]
     },
     {
       "title": "称号介绍",
       "imageUrl": "xxx.png",
-      "dataType": 102,
+      "dataType": 202,
       "childrenModular": [
         {
-          "title": "称号1",
-          "imageUrl": "xxx.png",
+          "title": "独自旅行（ひとりたび）",
+          "imageUrl": "",
           "dataType": 0,
-          "describe": "这是一个恐怖的螃蟹！！"
+          "describe": "获得方式：初次旅行"
         },
         {
-          "title": "称号2",
-          "imageUrl": "xxx.png",
+          "title": "随心所欲的旅人（さまさまな旅行者）",
+          "imageUrl": "",
           "dataType": 0,
-          "describe": "这是一只恐怖的蜗牛！！"
+          "describe": "获得方式：旅行次数达到10次"
         },
         {
-          "title": "称号3",
-          "imageUrl": "xxx.png",
+          "title": "无止尽的冒险者（はてなき冒険家）",
+          "imageUrl": "",
           "dataType": 0,
-          "describe": "这是一只恐怖的蜗牛！！"
+          "describe": "获得方式：旅行次数达到50次"
+        },
+        {
+          "title": "慧眼名人（めきき名人）",
+          "imageUrl": "",
+          "dataType": 0,
+          "describe": "获得方式：收集所有特产"
+        },
+        {
+          "title": "散步好天气（おさんぽ日和）",
+          "imageUrl": "",
+          "dataType": 0,
+          "describe": "获得方式：单次旅行30分钟内回来"
+        },
+        {
+          "title": "不归的旅途（かえらぬ旅路）",
+          "imageUrl": "",
+          "dataType": 0,
+          "describe": "获得方式：单次旅行超过一天"
+        },
+        {
+          "title": "青蛙与三叶草（かえるにみつ叶）",
+          "imageUrl": "",
+          "dataType": 0,
+          "describe": "获得方式：三叶草十万以上"
+        },
+        {
+          "title": "馒头好恐怖（まんじゅう怖い）",
+          "imageUrl": "",
+          "dataType": 0,
+          "describe": "获得方式：收集30 个温泉馒头"
+        },
+        {
+          "title": "馒头好恐怖（まんじゅう怖い）",
+          "imageUrl": "",
+          "dataType": 0,
+          "describe": "获得方式：收集30 个温泉馒头"
+        },
+        {
+          "title": "求神庇佑（かみだのみ）",
+          "imageUrl": "",
+          "dataType": 0,
+          "describe": "获得方式：抽奖累积20次以上"
+        },
+        {
+          "title": "糖果便当（お菓子なごはん）",
+          "imageUrl": "",
+          "dataType": 0,
+          "describe": "获得方式：连续送访客吃四次金平糖"
         }
       ]
     },

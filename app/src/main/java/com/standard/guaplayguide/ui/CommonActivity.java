@@ -96,11 +96,13 @@ public class CommonActivity extends BaseTitleBarActivity {
         RelativeLayout.LayoutParams layoutParams = new RelativeLayout
                 .LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
         layoutParams.addRule(RelativeLayout.CENTER_HORIZONTAL);
-        layoutParams.setMargins(0, 60, 0, 0);
+        rvContent.setPadding(0, 60, 0, 0);
         rlContent.addView(rvContent, layoutParams);
+
         mModularGridViewAdapter.setOnModularClickListener(view -> {
             ModularBean childrenModuler = (ModularBean) view.getTag();
-            if (childrenModuler.dataType == 0) {
+            if (childrenModuler.dataType == -1) {
+            } else if (childrenModuler.dataType == 0) {
                 showResultDialog(childrenModuler);
             } else {
                 LaunchUtil.launchActivity(this, childrenModuler);

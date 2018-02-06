@@ -51,7 +51,7 @@ public class LaunchActivity extends BaseActivity {
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(aBoolean -> {
                     if (aBoolean) {
-                        SPHelp.setAppParam(BuildConfig.KEY_FIRST_INSTALL, false);
+                        SPHelp.setAppParam(BuildConfig.KEY_FIRST_INSTALL, true);
                         //加载Asset数据并存放到Local中
                         String jsonStr = AssetReadUtil.getJson(this, "Data.json");
                         SPHelp.setAppParam(BuildConfig.KEY_DATA_RECORD, jsonStr);
