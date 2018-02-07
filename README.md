@@ -8,6 +8,7 @@
 ![小伙伴](https://raw.githubusercontent.com/guoxiaolongonly/TravelGuaGuide/master/screen/animal.jpg)
 ![收藏](https://raw.githubusercontent.com/guoxiaolongonly/TravelGuaGuide/master/screen/collect.jpg)
 ![特产](https://raw.githubusercontent.com/guoxiaolongonly/TravelGuaGuide/master/screen/specialy.jpg)
+![称号](https://raw.githubusercontent.com/guoxiaolongonly/TravelGuaGuide/master/screen/name.jpg)
 	
     不要忘了我们的所有数据都可以在json文件里面配置!!
 
