@@ -1,9 +1,19 @@
 [![CSDN](https://img.shields.io/badge/CSDN-@xiaolongonly-blue.svg?style=flat)](http://blog.csdn.net/guoxiaolongonly)
 [![PersonBlog](https://img.shields.io/badge/PersonBlog-@xiaolongonly-blue.svg?style=flat)](http://xiaolongonly.cn/)
 
+#界面效果如下
+
+![启动页](https://raw.githubusercontent.com/guoxiaolongonly/TravelGuaGuide/master/screen/launcher.jpg)
+![首页](https://raw.githubusercontent.com/guoxiaolongonly/TravelGuaGuide/master/screen/main.jpg)
+![小伙伴](https://raw.githubusercontent.com/guoxiaolongonly/TravelGuaGuide/master/screen/animal.jpg)
+![收藏](https://raw.githubusercontent.com/guoxiaolongonly/TravelGuaGuide/master/screen/collect.jpg)
+![特产](https://raw.githubusercontent.com/guoxiaolongonly/TravelGuaGuide/master/screen/specialy.jpg)
+	
+    不要忘了我们的所有数据都可以在json文件里面配置!!
+
 # 设计意图
 
-1.最近旅行青蛙很火，我自己也在玩，然后发现一个痛点是每次找小动物喜欢吃什么，每个道具的用途，都需要打开浏览器搜索。实在不能忍，感觉很痛，于是决心自己写一个APP攻略！！
+最近旅行青蛙很火，我自己也在玩，然后发现一个痛点是每次找小动物喜欢吃什么，每个道具的用途，都需要打开浏览器搜索。实在不能忍，感觉很痛，于是决心自己写一个APP攻略！！
 
 # 需求分析
 
@@ -80,7 +90,11 @@
 原本预想其实就是分成好几个Activity来写，但是后来想想写了那么多Activity其实参数都一样，逻辑也都一样，就是页面的布局不一样而已。
 写那么多的Activity其实可以写成一个Activity，然后Adapter做抽象，实现不同的 Adapter来实现不同的列表。
 后面又想了一下，Adapter其实也不用做什么操作，只有布局不一样，点击响应和数据传递都是一样的。就把布局直接传给了Adapter。由数据来确定初始化什么布局，和布局的样式。
-最终实现就是这样，但是也看出了这样实现的一些弊端，就是不适合数据量大的场景。不过我们的数据量确实不大。就先这样了！！NICE Day!!
+最终实现就是这样，但是也看出了这样实现的一些弊端，就是不适合数据量大的场景。不过我们的数据量确实不大，就先这样了！！nice day!!
+
+---
+
+就写到这里了。攻略也不想整理了！！！！  因为根本就找不到用户 2333！！
 
 # License
 
