@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">GuaPlayGuide</string>
+    <string name="app_name">旅行青蛙攻略</string>
     <string name="load_system_busy">一不留神，页面走丢啦~</string>
     <string name="load_loading_dialog_text">加载中</string>
     <string name="load_empty">暂无数据</string>
