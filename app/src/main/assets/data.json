@@ -14,49 +14,33 @@
       "childrenModular": [
         {
           "title": "基本玩法",
-          "dataType": 201,
-          "childrenModular": [
-            {
-              "title": "基本玩法段落1",
-              "imageUrl": "xxx.png"
-            },
-            {
-              "title": "基本玩法段落2",
-              "imageUrl": "xxx.png"
-            }
-          ]
-        },
-        {
-          "title": "进阶玩法",
-          "dataType": 201,
-          "childrenModular": [
-            {
-              "title": "进阶玩法段落1",
-              "imageUrl": "xxx.png"
-            },
-            {
-              "title": "进阶玩法段落2",
-              "imageUrl": "xxx.png"
-            }
-          ]
-        },
-        {
-          "title": "骨灰玩法",
-          "dataType": 201,
-          "childrenModular": [
-            {
-              "title": "骨灰玩法段落1",
-              "imageUrl": "xxx.png"
-            },
-            {
-              "title": "骨灰玩法段落2",
-              "imageUrl": "xxx.png"
-            }
-          ]
-        },
-        {
-          "title": "技术帝玩法",
           "dataType": 301,
+          "webUrl": "https://www.zhihu.com/question/68733553/answer/293664245"
+        },
+        {
+          "title": "技术帝操作",
+          "dataType": 202,
+          "childrenModular": [
+            {
+              "title": "逆向分析",
+              "dataType": 301,
+              "webUrl": "https://www.zhihu.com/question/68733553/answer/305463907"
+            },
+            {
+              "title": "Android破解",
+              "dataType": 301,
+              "webUrl": "http://blog.csdn.net/kalongkaya/article/details/79161734?from=groupmessage"
+            }
+          ]
+        },
+        {
+          "title": "照片合集",
+          "dataType": 301,
+          "webUrl": "https://www.zhihu.com/question/68733553/answer/298709937"
+        },
+        {
+          "title": "数据还在整理先贴一些有用的资源",
+          "dataType": -1,
           "webUrl": ""
         }
       ]

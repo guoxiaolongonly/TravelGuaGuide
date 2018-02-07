@@ -12,7 +12,6 @@ android {
         buildConfigField("int", "CONNECT_TIMEOUT", CONNECT_TIMEOUT)
         buildConfigField("int", "WRITE_TIMEOUT", WRITE_TIMEOUT)
         buildConfigField("int", "READ_TIMEOUT", READ_TIMEOUT)
-        buildConfigField("String", "DEVICE_TYPE", DEVICE_TYPE)
         buildConfigField("String", "INTER_VERSION", INTER_VERSION)
         buildConfigField("int", "TIME_CLICK_IGNORE", TIME_CLICK_IGNORE)
         buildConfigField("String", "RECEIVABLES_BUNDLE", RECEIVABLES_BUNDLE)
