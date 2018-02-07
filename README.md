@@ -1,13 +1,13 @@
 [![CSDN](https://img.shields.io/badge/CSDN-@xiaolongonly-blue.svg?style=flat)](http://blog.csdn.net/guoxiaolongonly)
 [![PersonBlog](https://img.shields.io/badge/PersonBlog-@xiaolongonly-blue.svg?style=flat)](http://xiaolongonly.cn/)
 
-#界面效果如下
+# 界面效果如下
 
-![启动页](https://raw.githubusercontent.com/guoxiaolongonly/TravelGuaGuide/master/screen/launcher.jpg)
-![首页](https://raw.githubusercontent.com/guoxiaolongonly/TravelGuaGuide/master/screen/main.jpg)
-![小伙伴](https://raw.githubusercontent.com/guoxiaolongonly/TravelGuaGuide/master/screen/animal.jpg)
-![收藏](https://raw.githubusercontent.com/guoxiaolongonly/TravelGuaGuide/master/screen/collect.jpg)
-![特产](https://raw.githubusercontent.com/guoxiaolongonly/TravelGuaGuide/master/screen/specialy.jpg)
+![启动页](https://raw.githubusercontent.com/guoxiaolongonly/TravelGuaGuide/master/screen/launcher.jpg){:height="800px" width="640px"}
+![首页](https://raw.githubusercontent.com/guoxiaolongonly/TravelGuaGuide/master/screen/main.jpg)){:height="800px" width="640px"}
+![小伙伴](https://raw.githubusercontent.com/guoxiaolongonly/TravelGuaGuide/master/screen/animal.jpg)){:height="800px" width="640px"}
+![收藏](https://raw.githubusercontent.com/guoxiaolongonly/TravelGuaGuide/master/screen/collect.jpg)){:height="800px" width="640px"}
+![特产](https://raw.githubusercontent.com/guoxiaolongonly/TravelGuaGuide/master/screen/specialy.jpg)){:height="800px" width="640px"}
 	
     不要忘了我们的所有数据都可以在json文件里面配置!!
 
