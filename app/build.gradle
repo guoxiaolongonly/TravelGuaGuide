@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 27
     defaultConfig {
-        applicationId "com.standard.guaplayguide"
+        applicationId "cn.xiaolongonly.guaplayguide"
         minSdkVersion 21
         targetSdkVersion 26
         versionCode 1

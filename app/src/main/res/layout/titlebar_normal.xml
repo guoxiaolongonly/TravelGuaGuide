@@ -8,7 +8,7 @@
         android:layout_width="match_parent"
         android:layout_height="174px">
 
-        <com.standard.guaplayguide.ui.widget.ClickImageView
+        <cn.xiaolongonly.guaplayguide.ui.widget.ClickImageView
             android:id="@+id/title_right"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -32,7 +32,7 @@
             android:textColor="@color/white"
             android:textSize="54px" />
 
-        <com.standard.guaplayguide.ui.widget.ClickImageView
+        <cn.xiaolongonly.guaplayguide.ui.widget.ClickImageView
             android:id="@+id/title_left"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
