@@ -10,7 +10,8 @@
 ![特产](https://raw.githubusercontent.com/guoxiaolongonly/TravelGuaGuide/master/screen/specialy.png)
 ![称号](https://raw.githubusercontent.com/guoxiaolongonly/TravelGuaGuide/master/screen/name.png)
 	
-    不要忘了我们的所有数据都可以在json文件里面配置!!
+    不要忘了我们的所有数据和界面都可以在github的json文件里面配置有需要的小伙伴自行拿去用吧!!
+[fir下载地址](https://fir.im/qwgl)
 
 # 设计意图
 
