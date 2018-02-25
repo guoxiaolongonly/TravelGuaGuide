@@ -3,11 +3,10 @@ android {
     compileSdkVersion 27
     defaultConfig {
         applicationId "cn.xiaolongonly.guaplayguide"
-        minSdkVersion 21
+        minSdkVersion 16
         targetSdkVersion 26
         versionCode 1
         versionName "1.0"
-
         buildConfigField("String", "DEVICE_ID", DEVICE_ID)
         buildConfigField("int", "CONNECT_TIMEOUT", CONNECT_TIMEOUT)
         buildConfigField("int", "WRITE_TIMEOUT", WRITE_TIMEOUT)
@@ -161,6 +160,7 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    implementation 'com.android.support:multidex:1.0.0'
     //自动布局
     implementation 'com.zhy:autolayout:1.4.5'
     //okhttp

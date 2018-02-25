@@ -1,6 +1,8 @@
 package cn.xiaolongonly.guaplayguide.utils.statusbar;
 
+import android.annotation.TargetApi;
 import android.app.Activity;
+import android.os.Build;
 
 import cn.xiaolongonly.guaplayguide.utils.StatusBarValue;
 
@@ -13,6 +15,8 @@ import cn.xiaolongonly.guaplayguide.utils.StatusBarValue;
  */
 public class StatusBarCompat {
 
+
+    @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     public static void compat(Activity activity, StatusBarValue statusBarValue) {
         if (statusBarValue.isStatusBarOccupying) {
             Eyes.setStatusBarColor(activity, statusBarValue.statusBarColor);

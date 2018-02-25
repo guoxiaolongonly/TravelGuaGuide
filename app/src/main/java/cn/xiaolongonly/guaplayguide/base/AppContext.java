@@ -41,8 +41,13 @@ public class AppContext {
 
     public synchronized void init(Context context) {
         AppContext.context = context;
-        APP_VERSION_CODE = String.valueOf(Util.getAppVersionCode(context));
-        APP_VERSION_NAME = Util.getAppVersionName(context);
+        try {
+            APP_VERSION_CODE = String.valueOf(Util.getAppVersionCode(context));
+            APP_VERSION_NAME = Util.getAppVersionName(context);
+        }catch (Exception e)
+        {
+
+        }
     }
 
     public static boolean isNetworkAvailable() {

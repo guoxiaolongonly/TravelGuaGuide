@@ -1,13 +1,4 @@
 <resources>
-
-    <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
-    </style>
-
     <style name="MyAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
@@ -23,6 +14,8 @@
         <item name="windowNoTitle">true</item>
         <item name="android:windowBackground">@color/windowBackground</item>
         <!--<item name="android:windowAnimationStyle">@style/Bright.Activity.Animation.Right</item>-->
+    </style>
+    <style name="AppTheme.Launcher" parent="@style/MyAppTheme">
     </style>
     <style name="ProgressDialogTheme" parent="android:Theme.Dialog">
         <item name="android:windowFrame">@null</item>

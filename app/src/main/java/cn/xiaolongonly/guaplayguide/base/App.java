@@ -1,6 +1,8 @@
 package cn.xiaolongonly.guaplayguide.base;
 
 import android.app.Application;
+import android.content.Context;
+import android.support.multidex.MultiDex;
 
 import cn.xiaolongonly.guaplayguide.BuildConfig;
 import cn.xiaolongonly.guaplayguide.net.NetworkConfig;
@@ -17,7 +19,15 @@ public class App extends Application {
     public void onCreate() {
         super.onCreate();
         AppContext.getInstance().init(this);
-        LogUtil.init(BuildConfig.DEBUG_LOG, "CHECKS");
+        LogUtil.init(BuildConfig.DEBUG_LOG, "lucky");
         NetworkConfig.setBaseUrl(BuildConfig.HOST_URL);
+    }
+
+    @Override
+    protected void attachBaseContext(Context base) {
+
+        super.attachBaseContext(base);
+        MultiDex.install(base);
+
     }
 }
